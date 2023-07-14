@@ -16,7 +16,8 @@
 ## 🤖 Low Level Learning
 
 * [C Programming](low-level-learning/c-programming/README.md)
-  * [GCC Compilation](low-level-learning/c-programming/gcc-compilation.md)
+  * [Introduction](low-level-learning/c-programming/gcc-compilation.md)
+  * [GCC Compilation](low-level-learning/c-programming/gcc-compilation-1.md)
   * [Preprocessors](low-level-learning/c-programming/preprocessors.md)
   * [Data Types](low-level-learning/c-programming/data-types.md)
   * [Type Qualifiers](low-level-learning/c-programming/type-qualifiers.md)

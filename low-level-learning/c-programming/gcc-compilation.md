@@ -17,167 +17,146 @@ layout:
     visible: true
 ---
 
-# GCC Compilation
+# Introduction
 
-#### <mark style="color:purple;">GCC (upper case) refers to the GNU Compiler Collection.</mark>
-
-GCC is an open source compiler suite which include compilers for C, C++, Objective C, Fortran, Ada, Go and Java.&#x20;
-
-#### <mark style="color:purple;">gcc (lower case) is the C compiler in the GNU Compiler Collection.</mark>
-
-The GCC project has detailed documentation at [https://gcc.gnu.org](https://gcc.gnu.org) which document installation, general usage, and every command line option. Please refer to the official GCC documentation on any question not answered here.
-
-## <mark style="color:red;">Compilation steps</mark>
-
-### <mark style="color:yellow;">1) Preprocessing</mark>
-
-#### <mark style="color:purple;">The preprocessor obeys commands that begin with # (known as directives) by:</mark>
-
-* removing comments
-* expanding macros
-* expanding included files
-
-{% hint style="info" %}
-If you included a header file such as #include \<stdio.h>, it will look for the stdio.h file and copy the header file into the source code file.
-{% endhint %}
-
-The preprocessor also generates macro code and replaces symbolic constants defined using #define with their values.
-
-### <mark style="color:yellow;">2)</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">**Compiling**</mark>
-
-It takes the output of the preprocessor and generates assembly language, an intermediate human readable language, specific to the target processor.
-
-### <mark style="color:yellow;">3) Assembly</mark>
-
-The assembler will convert the assembly code into pure binary code or machine code (0s & 1s). This code is also known as object code.
-
-### <mark style="color:yellow;">4) Linking</mark>
-
-The linker merges all the object code from multiple modules into a single one.&#x20;
-
-If we are using a function from libraries, linker will link our code with that library function code.
-
-#### <mark style="color:purple;">In static linking, the linker makes a copy of all used library functions to the executable file.</mark>&#x20;
-
-#### <mark style="color:purple;">In dynamic linking, the code is not copied, it is done by just placing the name of the library in the binary file.</mark>
-
-## <mark style="color:red;">Basic GCC syntax</mark>
-
-Here is a basic usage of gcc for compiling a non-threaded C code with no external linking and libraries (except for standard C libraries) on linux systems:
+## <mark style="color:red;">First Program</mark>
 
 ```c
-gcc app.c -o app
+#include <stdio.h>
+
+int main()
+{
+    printf ("Oh man, you look like an ape!");
+    return 0;
+}
 ```
 
-#### <mark style="color:purple;">This will do all the steps discussed above and generate an executable (ELF) file named app.</mark>
+## <mark style="color:red;">Detect the version of C</mark>
 
-## <mark style="color:red;">Useful GCC options</mark>
+```c
+#include <stdio.h>
 
-These are some of the most used gcc compilation options that you will usually use, for more info and options refer to [gcc official documentation](https://gcc.gnu.org/onlinedocs/).
+int main(int argc, char **argv) {
 
-```bash
--Wall → enables all warnings.
+#if __STDC_VERSION__ >=  201710L
+  printf("We are using C18!\n");
+  
+#elif __STDC_VERSION__ >= 201112L
+  printf("We are using C11!\n");
+  
+#elif __STDC_VERSION__ >= 199901L
+  printf("We are using C99!\n");
+#else
+  printf("We are using C89/C90!\n");
+  
+#endif
 
--E → shows the code that preprocessors use.
-
--S → only assembly code.
-
--save-temp → save all the .o files (produce everything).
-
--l → link to a file.
-
-m → for math library while using -l (link to math library).
-
--fPIC → create a shared library ( then use -shared -o prog.so prog.o).
-
--g → generates debugging info.
-
--v → verbose on every step.
-
--ansi → make sure thing are compatible with the ansi standard.
-
--funsigned-char →  char type is threated as unsigned type.
-
--fsigned-char → the aposite of the above options.
-
--DMY_MACRO → define MY_MACRO.
-
--Werror → all warnings will be threated as errors.
+  return 0;
+}
 ```
 
-## <mark style="color:red;">Using a config file</mark>
+## <mark style="color:red;">Comments</mark>
 
-To avoid specifying the options each time you want to compile a file, you can specify a configuration file including all the options like this:
-
-```bash
-@ → use with a file name containing gcc options for example a file with this content:
-
-opt_file:
-
--Wall -g 
-
-use it like this:
-
-gcc test.c @opt_file → use the options in opt_file  
+```c
+  /* 
+     multiline comment
+  */
+  
+ // single line comment
 ```
 
-## <mark style="color:red;">C and disassembly</mark>
+## <mark style="color:red;">Taking command line arguments</mark>
 
-#### <mark style="color:purple;">​</mark><mark style="color:purple;">**The gcc option -O enables different levels of optimization.**</mark>&#x20;
+```c
+#include <stdio.h>
 
-Use **-O0** to disable them and use **-S** to output assembly.&#x20;
+int main(int argc,char *argv[])
 
-**-O3** is the highest level of optimization.
+{
+ int numberOfArgs = argc;
+ char *argument = argv[0];
+ char *argument2 = argv[1];
 
-Starting with **gcc 4.8** the optimization level **-Og** is available.&#x20;
-
-It enables optimizations that do not interfere with debugging and is the recommended default for the standard edit-compile-debug cycle.
-
-#### <mark style="color:purple;">**To change the dialect of the assembly to either intel or att use -masm=intel or -masm=att.**</mark>
-
-You can also enable certain optimizations manually with **-fname**.
-
-## <mark style="color:red;">​Optimization Flags</mark>
-
-#### <mark style="color:purple;">Use gcc with -Q --help=optimizers to find the exact set of optimizations at each level:</mark>
-
-{% code overflow="wrap" %}
-```bash
--O → tries to reduce code size and execution time without performing any optimizations that make a great deal of compilation time.
-
--O1 → takes more time and a lot more memory.
-
--O2 → optimize even more. performs nearlly all supported optimizations that do not involve a spade-speed tradeoff.
-
--O3 → turns on all optimizations.
-
--Ofast → turns on everything including the optimizations that are not valid for all standard-compilant programs.
-
--Og → optimize debugging experience.
+ printf("number of arguments: %d\n", numberOfArgs);
+ printf("argument number 1 is the program name: %s\n", argument);
+ printf("argument2 is the command line argument %s\n", argument2);
+ 
+ return 0;
+}
 ```
-{% endcode %}
 
-## <mark style="color:red;">Strip and reduce binary size</mark>
+## <mark style="color:red;">NULL "\0"</mark>
 
-{% code overflow="wrap" %}
-```bash
--Os -> this flag enables size optimization, focusing on reducing the size of the resulting binary. It applies various optimization techniques to achieve smaller code size.
+A special character with the code value 0 is added to the end of each string to mark where it ends.
 
--s -> this flag tells GCC to strip symbols from the compiled binary, reducing its size. This makes it harder to analyze the binary and extract meaningful information from it.
+A string is always terminated by a null character so the length of a string is always one greater than the number of characters in the string.
 
--flto -> this flag enables link-time optimization, Link-time optimization can help reduce code size by eliminating redundant code and optimizing function calls.
+We can add a "\0" to the end of a string, this will create two strings but only the first one will be printed.
 
--ffunction-sections and -fdata-sections -> these flags enable the generation of individual sections for each function and data object. 
+#### <mark style="color:purple;">NULL is a symbol that represents a memory address that doesn't reference anything.</mark>
 
---gc-sections -> removal of unused functions or data sections during the linking phase.
+## <mark style="color:red;">Modular programming</mark>
 
--Wl and --gc-sections -> this linker flag removes unused sections from the final binary, further reducing its size by eliminating unused code and data sections.
+We can put our code in multiple separate files and include the headers in the main file and use another source file to import functions and other instructions.&#x20;
+
+#### <mark style="color:purple;">To do this:</mark>
+
+1. <mark style="color:orange;">Create a header file pointing to a source file:</mark>&#x20;
+
+<mark style="color:orange;">**Create**</mark> <mark style="color:orange;">**other.h → header file.**</mark>
+
+```c
+#ifndef UNTITLED_OTHER_H
+#define UNTITLED_OTHER_H
+int getme(void); // The function that this header refers to
+#endif // UNTITLED_OTHER_H
 ```
-{% endcode %}
 
-## <mark style="color:red;">GCC Environment Variables</mark>
+\
+This is pointing to a source file with the name **other.c** **(same as header.c)** which contains the source instructions for this header.&#x20;
 
-1. **PATH** **→** for searching the executables and run-time shared libraries (.dll, .so).
-2. **CPATH** **→** for searching the include-paths for headers searched after paths specified in -l options .
-3. **C\_INCLUDE\_PATH** **->** for specifying C headers if the particular language was indicated in pre-processing.
-4. **LIBRARY\_PATH** **→** for searching library-paths for link libraries. it is searching after paths specified in -L options.
+When we include this header in the **main.c** source file it refers to the header and the header refers to the **other.c** source file.
+
+2. <mark style="color:orange;">Create the source file for the header:</mark>&#x20;
+
+<mark style="color:orange;">**Create**</mark> <mark style="color:orange;">**other.c → source file for header**</mark><mark style="color:orange;">.</mark>
+
+```c
+ int getme(void){
+   return 3;
+}
+```
+
+\
+Here we define the **getme() function** which was referred to by header and will be used in the **main.c** source file. We don't need to include anything in this source file.
+
+3. <mark style="color:orange;">Include the header in main.c and use the function:</mark>&#x20;
+
+<mark style="color:orange;">**Create main.c, include header.h and use getme() function.**</mark>
+
+```c
+#include <stdio.h>
+#include "other.h"
+
+int main(){
+
+ printf("%d\n", getme());
+
+ return 0;
+}
+```
+
+\
+Here we have to include the header file with double quotations cause we know its in the same directory so we don't need to look for it in the whole system.&#x20;
+
+Then we can use the **getme() function** defined in **other.c** source file which is referred to by the **other.c** header.
+
+4. <mark style="color:orange;">To compile without an IDE from command line & compile all .c source files, headers are checked in compile time and are not included in the command:</mark>
+
+<mark style="color:orange;">**gcc \*.c -o \[program name].**</mark>
+
+{% hint style="info" %}
+Use with -c instead of  -o to keep the object files if you want.
+
+We can use object files only to compile the program same as we did with the source files, .o and .c is the same here.
+{% endhint %}
