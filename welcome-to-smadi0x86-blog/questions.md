@@ -17,6 +17,10 @@ coverY: -127
 
 ### [Compile asm with gcc?](https://stackoverflow.com/questions/7190050/how-do-i-compile-the-asm-generated-by-gcc)
 
+### [Difference between PE & exe?](https://stackoverflow.com/questions/33757527/difference-between-exe-and-pe-files)
+
+### [What is an object file?](https://stackoverflow.com/questions/7718299/whats-an-object-file-in-c)
+
 ### [What is offset in assembly?](http://www.c-jump.com/CIS77/ASM/Instructions/I77\_0180\_offset\_operator.htm)
 
 ### [Difference between char\[\] and char\* for shellcode?](https://stackoverflow.com/questions/8542888/difference-between-declaring-shellcode-as-a-char-array-and-char)

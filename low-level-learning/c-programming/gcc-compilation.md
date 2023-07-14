@@ -26,7 +26,7 @@ layout:
 
 int main()
 {
-    printf ("Oh man, you look like an ape!");
+    printf ("Rust is dogshit!");
     return 0;
 }
 ```
@@ -58,11 +58,11 @@ int main(int argc, char **argv) {
 ## <mark style="color:red;">Comments</mark>
 
 ```c
-  /* 
+/* 
      multiline comment
-  */
+*/
   
- // single line comment
+// single line comment
 ```
 
 ## <mark style="color:red;">Taking command line arguments</mark>
@@ -70,18 +70,18 @@ int main(int argc, char **argv) {
 ```c
 #include <stdio.h>
 
-int main(int argc,char *argv[])
+int main(int argc, char *argv[])
 
 {
- int numberOfArgs = argc;
- char *argument = argv[0];
- char *argument2 = argv[1];
+  int numberOfArgs = argc;
+  char *argument = argv[0];
+  char *argument2 = argv[1];
 
- printf("number of arguments: %d\n", numberOfArgs);
- printf("argument number 1 is the program name: %s\n", argument);
- printf("argument2 is the command line argument %s\n", argument2);
+  printf("Number of arguments: %d\n", numberOfArgs);
+  printf("Argument number 1 is the program name: %s\n", argument);
+  printf("Argument2 is the command line argument: %s\n", argument2);
  
- return 0;
+  return 0;
 }
 ```
 
@@ -89,11 +89,13 @@ int main(int argc,char *argv[])
 
 A special character with the code value 0 is added to the end of each string to mark where it ends.
 
-A string is always terminated by a null character so the length of a string is always one greater than the number of characters in the string.
+A string is always terminated by a null character so the length of a string is always one greater than the number of characters in the string that's why length - 1 is commonly used.
 
 We can add a "\0" to the end of a string, this will create two strings but only the first one will be printed.
 
-#### <mark style="color:purple;">NULL is a symbol that represents a memory address that doesn't reference anything.</mark>
+{% hint style="info" %}
+#### NULL is a symbol that represents memory address that doesn't reference anything.
+{% endhint %}
 
 ## <mark style="color:red;">Modular programming</mark>
 
@@ -108,14 +110,11 @@ We can put our code in multiple separate files and include the headers in the ma
 ```c
 #ifndef UNTITLED_OTHER_H
 #define UNTITLED_OTHER_H
-int getme(void); // The function that this header refers to
+
+int getme(void); 
+
 #endif // UNTITLED_OTHER_H
 ```
-
-\
-This is pointing to a source file with the name **other.c** **(same as header.c)** which contains the source instructions for this header.&#x20;
-
-When we include this header in the **main.c** source file it refers to the header and the header refers to the **other.c** source file.
 
 2. Create the source file for the header:&#x20;
 
@@ -128,11 +127,15 @@ When we include this header in the **main.c** source file it refers to the heade
 ```
 
 \
-Here we define the **getme() function** which was referred to by header and will be used in the **main.c** source file. We don't need to include anything in this source file.
+Here we define the **getme() function** which was referred to by header and will be used in the **main.c** source file.
+
+{% hint style="info" %}
+**We don't need to include anything in this source file.**
+{% endhint %}
 
 3. Include the header in main.c and use the function:&#x20;
 
-<mark style="color:orange;">**Create main.c, include header.h and use getme() function.**</mark>
+<mark style="color:orange;">**Create main.c, include other.h and use getme() function.**</mark>
 
 ```c
 #include <stdio.h>
@@ -140,21 +143,19 @@ Here we define the **getme() function** which was referred to by header and will
 
 int main(){
 
- printf("%d\n", getme());
+  printf("%d\n", getme());
 
- return 0;
+  return 0;
 }
 ```
 
 \
-Here we have to include the header file with double quotations cause we know its in the same directory so we don't need to look for it in the whole system.&#x20;
-
-Then we can use the **getme() function** defined in **other.c** source file which is referred to by the **other.c** header.
+Here we have to include the header file with "double quotations" cause we know its in the same directory so we don't need to look for it in the whole system.&#x20;
 
 4. To compile without an IDE from command line & compile all .c source files, headers are checked in compile time and are not included in the command:
 
 <mark style="color:orange;">**gcc \*.c -o \[program name].**</mark>
 
 {% hint style="info" %}
-Use with -c instead of  -o to get object files.
+**Use with -c instead of  -o to get object files.**
 {% endhint %}

@@ -49,19 +49,19 @@ We can help reduce this problem by incorporating the values of these defines for
 \
 Its also used to switch on or off various statements in the program, trace the flow of a program or debug statements that print out the values of various variables.
 
-#### <mark style="color:purple;">#if → test the value of a constant expression.</mark>
+#### <mark style="color:purple;">#if → Test the value of a constant expression.</mark>
 
 {% hint style="info" %}
 **Every #if construct ends with an #endif.**
 {% endhint %}
 
-#### <mark style="color:purple;">#else → to complement #ifdef/#ifndef and #if.</mark>
+#### <mark style="color:purple;">#else → To complement #ifdef/#ifndef and #if.</mark>
 
-#### <mark style="color:purple;">#define → defines an identifier, we can define them from the command line too.</mark>
+#### <mark style="color:purple;">#define → Defines an identifier, we can define them from the command line too.</mark>
 
-#### <mark style="color:purple;">#ifdef → checks wether an identifier is currently defined.</mark>
+#### <mark style="color:purple;">#ifdef → Checks whether an identifier is currently defined.</mark>
 
-#### <mark style="color:purple;">#ifndef → the negative of the ifdef.</mark>
+#### <mark style="color:purple;">#ifndef → The negative of the ifdef.</mark>
 
 {% hint style="info" %}
 **Directives #ifdef and #ifndef are provided as shorthand for:**
@@ -119,12 +119,12 @@ To control the amount of memory set aside for automatic variables to set the str
 #pragma message
 ```
 
-#### <mark style="color:purple;">pragma GCC dependency → check the relative date of the current file and another file, if the other file is more recent than the current file, a warning is issued.</mark>
+#### <mark style="color:purple;">Pragma GCC dependency →</mark> Check the relative date of the current file and another file, if the other file is more recent than the current file, a warning is issued.
 
 #### <mark style="color:purple;">Example:</mark>
 
-```
-pragma GCC dependency "parse.y"
+```c
+#pragma GCC dependency "parse.y"
 ```
 
 {% hint style="info" %}
@@ -138,15 +138,15 @@ pragma GCC dependency "parse.y"
 sprintf(some_string,"hello"); // This will raise an error.
 ```
 
-#### <mark style="color:purple;">pragma GCC system\_header → tells the compiler to consider the rest of the current include file as a system header.</mark>
+#### <mark style="color:purple;">Pragma GCC system\_header →</mark> Tells the compiler to consider the rest of the current include file as a system header.
 
-#### <mark style="color:purple;">pragma once → specifies that the header file containing the directive is included only once even if the programmer includes it multiple times.</mark>
+#### <mark style="color:purple;">Pragma once →</mark> Specifies that the header file containing the directive is included only once even if the programmer includes it multiple times.
 
-#### <mark style="color:purple;">pragma GCC warning "message" → causes the preprocessor to issue a warning diagnostic with the text "message".</mark>
+#### <mark style="color:purple;">Pragma GCC warning "message" →</mark> Causes the preprocessor to issue a warning diagnostic with the text "message".
 
-#### <mark style="color:purple;">pragma GCC error "message" → cause the preprocessor to issue an error with the text "message".</mark>
+#### <mark style="color:purple;">Pragma GCC error "message" →</mark> Cause the preprocessor to issue an error with the text "message".
 
-#### <mark style="color:purple;">pragma GCC message "message" → prints string as a compiler message on compilation. the message is information only not warning or error.</mark>
+#### <mark style="color:purple;">Pragma GCC message "message" →</mark> Prints string as a compiler message on compilation. the message is information only not warning or error.
 
 ## <mark style="color:red;">Error directive</mark>
 
@@ -154,12 +154,16 @@ Causes the preprocessor to issue an error message that includes any text in the 
 
 Error message is a sequence of characters by spaces.
 
+{% hint style="info" %}
 You do not have to in-close the text in quotes the message is optional.
+{% endhint %}
 
 #### <mark style="color:purple;">Example:</mark>
 
 <pre class="language-c" data-overflow="wrap"><code class="lang-c">#if STDC_VERSION != 201112L // Failes if the compiler uses an older standard and successes when it uses C11.
+
 Error Not C11
+
 <strong>#endif
 </strong></code></pre>
 
@@ -169,7 +173,7 @@ Used for concatenation.&#x20;
 
 Often useful to merge two tokens into one while expanding macros (called token pasting or token concatenation).
 
-#### <mark style="color:purple;"># → used within a macro definition causes a replacement text token to be converted to a string surrounded by quotes.</mark>
+#### <mark style="color:purple;"># →</mark> Used within a macro definition causes a replacement text token to be converted to a string surrounded by quotes.
 
 #### <mark style="color:purple;">Example:</mark>
 
@@ -181,7 +185,7 @@ Often useful to merge two tokens into one while expanding macros (called token p
 printf("Hello," "john" "\n");
 ```
 
-#### <mark style="color:purple;">##→ performs token pasting, cats two tokens.</mark>
+#### <mark style="color:purple;">## →</mark> Performs token pasting, cats two tokens.
 
 #### <mark style="color:purple;">Example:</mark>
 

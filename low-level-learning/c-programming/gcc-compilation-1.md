@@ -33,9 +33,9 @@ The GCC project has detailed documentation at [https://gcc.gnu.org](https://gcc.
 
 #### <mark style="color:purple;">The preprocessor obeys commands that begin with # (known as directives) by:</mark>
 
-* removing comments
-* expanding macros
-* expanding included files
+* Removing comments.
+* Expanding macros.
+* Expanding included files.
 
 {% hint style="info" %}
 If you included a header file such as #include \<stdio.h>, it will look for the stdio.h file and copy the header file into the source code file.
@@ -45,11 +45,19 @@ The preprocessor also generates macro code and replaces symbolic constants defin
 
 ### <mark style="color:yellow;">2)</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">**Compiling**</mark>
 
-It takes the output of the preprocessor and generates assembly language, an intermediate human readable language, specific to the target processor.
+It takes the output of the preprocessor and generates assembly language, an intermediate human readable language, specific to the target processor Intel, MIPS, ARM etc...
+
+{% hint style="info" %}
+There are several assembly syntaxes for every processor, I will be using Intel x86 syntax but worth noting others such as AT\&T widely used with the GNU Assembler (GAS) and commonly found in Unix-like systems.
+{% endhint %}
 
 ### <mark style="color:yellow;">3) Assembly</mark>
 
-The assembler will convert the assembly code into pure binary code or machine code (0s & 1s). This code is also known as object code.
+The assembler will convert the assembly code into pure binary code or machine code (0s & 1s).&#x20;
+
+{% hint style="info" %}
+This code is also known as object code that have an extension of ".o".
+{% endhint %}
 
 ### <mark style="color:yellow;">4) Linking</mark>
 
@@ -57,9 +65,27 @@ The linker merges all the object code from multiple modules into a single one.&#
 
 If we are using a function from libraries, linker will link our code with that library function code.
 
-#### <mark style="color:purple;">In static linking, the linker makes a copy of all used library functions to the executable file.</mark>&#x20;
+#### <mark style="color:purple;">Static Linking</mark>
 
-#### <mark style="color:purple;">In dynamic linking, the code is not copied, it is done by just placing the name of the library in the binary file.</mark>
+Static linking means putting all the necessary code from libraries directly into the executable file. When you compile your code, the linker copies the required library functions into the final executable.&#x20;
+
+This makes the executable bigger, but it can run on its own without needing any additional files.
+
+If your program needs to calculate square roots using sqrt() from #include \<math.h>, static linking will include the code for sqrt() directly in the executable.
+
+#### <mark style="color:purple;">Dynamic Linking</mark>
+
+Dynamic linking involves referencing external libraries by name, and the actual library code is loaded and linked at runtime.
+
+If your program uses a library called "libexample.so" or "example.dll" for certain functions, dynamic linking will only include references to those functions in the executable.&#x20;
+
+The actual library is loaded when the program is executed.
+
+{% hint style="info" %}
+If you use a non-standard library, you must specify its location by:
+
+&#x20;gcc main.c -o main -L /path/to/libraries -libexample.so or example.dll
+{% endhint %}
 
 ## <mark style="color:red;">Basic GCC syntax</mark>
 
@@ -86,7 +112,7 @@ These are some of the most used gcc compilation options that you will usually us
 
 -l → link to a file.
 
-m → for math library while using -l (link to math library).
+-lm → for math library while using -l (link to math library).
 
 -fPIC → create a shared library ( then use -shared -o prog.so prog.o).
 
@@ -105,22 +131,6 @@ m → for math library while using -l (link to math library).
 -Werror → all warnings will be threated as errors.
 ```
 
-## <mark style="color:red;">Using a config file</mark>
-
-To avoid specifying the options each time you want to compile a file, you can specify a configuration file including all the options like this:
-
-```bash
-@ → use with a file name containing gcc options for example a file with this content:
-
-opt_file:
-
--Wall -g 
-
-use it like this:
-
-gcc test.c @opt_file → use the options in opt_file  
-```
-
 ## <mark style="color:red;">C and disassembly</mark>
 
 #### <mark style="color:purple;">​</mark><mark style="color:purple;">**The gcc option -O enables different levels of optimization.**</mark>&#x20;
@@ -129,17 +139,15 @@ Use **-O0** to disable them and use **-S** to output assembly.&#x20;
 
 **-O3** is the highest level of optimization.
 
-Starting with **gcc 4.8** the optimization level **-Og** is available.&#x20;
+Starting with **gcc 4.8** the optimization level **-Og** is available. It enables optimizations that do not interfere with debugging and is the recommended default for the standard edit-compile-debug cycle.
 
-It enables optimizations that do not interfere with debugging and is the recommended default for the standard edit-compile-debug cycle.
+{% hint style="info" %}
+#### To change the syntax of the assembly to either Intel or AT\&T use:
 
-#### <mark style="color:purple;">**To change the dialect of the assembly to either intel or att use -masm=intel or -masm=att.**</mark>
-
-You can also enable certain optimizations manually with **-fname**.
+#### &#x20;-masm=intel or -masm=att.
+{% endhint %}
 
 ## <mark style="color:red;">​Optimization Flags</mark>
-
-#### <mark style="color:purple;">Use gcc with -Q --help=optimizers to find the exact set of optimizations at each level:</mark>
 
 {% code overflow="wrap" %}
 ```bash
@@ -174,10 +182,3 @@ You can also enable certain optimizations manually with **-fname**.
 -Wl and --gc-sections -> this linker flag removes unused sections from the final binary, further reducing its size by eliminating unused code and data sections.
 ```
 {% endcode %}
-
-## <mark style="color:red;">GCC Environment Variables</mark>
-
-1. **PATH** **→** for searching the executables and run-time shared libraries (.dll, .so).
-2. **CPATH** **→** for searching the include-paths for headers searched after paths specified in -l options .
-3. **C\_INCLUDE\_PATH** **->** for specifying C headers if the particular language was indicated in pre-processing.
-4. **LIBRARY\_PATH** **→** for searching library-paths for link libraries. it is searching after paths specified in -L options.

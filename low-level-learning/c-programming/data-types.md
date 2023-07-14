@@ -35,31 +35,21 @@ Boolean data type for storing 0 or 1 values.
 
 Used for on/off, yes/no, true/false situation (binary choices).
 
-**\<stdbool.h>** → include it to use bool instead of \_Bool.
-
-#### <mark style="color:purple;">**bool**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">→ substitute name for the basic \_Bool data type:</mark>
-
-`true: 1`
-
-`false: 0`
-
-\_Bool → \_Bool var = 1
-
-#### <mark style="color:purple;">or we can do:</mark>&#x20;
-
-\_Bool y = 1; \_Bool n = 0;
+{% hint style="info" %}
+Include **\<stdbool.h>** to use bool instead of \_Bool.
+{% endhint %}
 
 <pre class="language-c"><code class="lang-c">#include &#x3C;stdbool.h>
 
 bool var = true;
    
-// or we can do:
+// Or we can do:
 
-    _Bool y = 1;
-    _Bool n = 0;
+    _Bool y = 1; // True
+    _Bool n = 0; // False
 
 
-<strong>// or use preprocessors (have to include stdbool header ):
+<strong>// Or use preprocessors (have to include stdbool header):
 </strong>
 #define true 1
 #define false 0
@@ -67,30 +57,6 @@ bool var = true;
 #define yes true
 #define no false
 </code></pre>
-
-## <mark style="color:red;">Boolean in Conditional Loops</mark>
-
-#### This definition of true and false in boolean types is also applicable when we are using it in loops like a while loop.&#x20;
-
-#### <mark style="color:purple;">For example with when we want to use an infinite loop we can set the statements in a while(1) block:</mark>
-
-```c
-while(1) or while(any non-zero integer)
-{ 
-    // loop runs infinitely
-}
-```
-
-We can use any other positive or negative number instead of 1 in the loop. for example -255 or 10 or 735 are all the same and create a while loop.&#x20;
-
-#### <mark style="color:purple;">But using 0 will make the loop a false condition and it will always be false:</mark>
-
-```c
-while(0)
-{ 
-    // loop does not run, code in this section will never be reached
-}
-```
 
 ## <mark style="color:red;">size\_t</mark>
 
