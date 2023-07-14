@@ -1,26 +1,3 @@
----
-description: >-
-  Through this blog, I aim to share my experiences, insights and expertise in
-  offensive cybersecurity, advanced persistent threat, software development and
-  DevSecOps.
-cover: https://wallpaperaccess.com/full/5149049.jpg
-coverY: -293
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # 💀 Welcome to smadi0x86 Blog
 
 > _<mark style="color:red;">"Our Offense is your Defense"</mark>_
