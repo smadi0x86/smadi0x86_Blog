@@ -101,7 +101,7 @@ We can put our code in multiple separate files and include the headers in the ma
 
 #### <mark style="color:purple;">To do this:</mark>
 
-1. <mark style="color:orange;">Create a header file pointing to a source file:</mark>&#x20;
+1. Create a header file pointing to a source file:&#x20;
 
 <mark style="color:orange;">**Create**</mark> <mark style="color:orange;">**other.h → header file.**</mark>
 
@@ -117,7 +117,7 @@ This is pointing to a source file with the name **other.c** **(same as header.c)
 
 When we include this header in the **main.c** source file it refers to the header and the header refers to the **other.c** source file.
 
-2. <mark style="color:orange;">Create the source file for the header:</mark>&#x20;
+2. Create the source file for the header:&#x20;
 
 <mark style="color:orange;">**Create**</mark> <mark style="color:orange;">**other.c → source file for header**</mark><mark style="color:orange;">.</mark>
 
@@ -130,7 +130,7 @@ When we include this header in the **main.c** source file it refers to the heade
 \
 Here we define the **getme() function** which was referred to by header and will be used in the **main.c** source file. We don't need to include anything in this source file.
 
-3. <mark style="color:orange;">Include the header in main.c and use the function:</mark>&#x20;
+3. Include the header in main.c and use the function:&#x20;
 
 <mark style="color:orange;">**Create main.c, include header.h and use getme() function.**</mark>
 
@@ -151,12 +151,10 @@ Here we have to include the header file with double quotations cause we know its
 
 Then we can use the **getme() function** defined in **other.c** source file which is referred to by the **other.c** header.
 
-4. <mark style="color:orange;">To compile without an IDE from command line & compile all .c source files, headers are checked in compile time and are not included in the command:</mark>
+4. To compile without an IDE from command line & compile all .c source files, headers are checked in compile time and are not included in the command:
 
 <mark style="color:orange;">**gcc \*.c -o \[program name].**</mark>
 
 {% hint style="info" %}
-Use with -c instead of  -o to keep the object files if you want.
-
-We can use object files only to compile the program same as we did with the source files, .o and .c is the same here.
+Use with -c instead of  -o to get object files.
 {% endhint %}
