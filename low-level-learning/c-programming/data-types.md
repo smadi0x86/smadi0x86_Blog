@@ -60,9 +60,9 @@ bool var = true;
 
 ## <mark style="color:red;">size\_t</mark>
 
-**size\_t** → used to represent the size of objects in bytes and is therefore used as the return type by the sizeof operator.&#x20;
+**size\_t** → Used to represent the size of objects in bytes and is therefore used as the return type by the sizeof operator.&#x20;
 
-Size\_t is a type guaranteed to hold any array index only for non-negative values.
+size\_t is a type guaranteed to hold any array index only for non-negative values.
 
 ```c
 size_t s1 = strlen(str1);
@@ -94,44 +94,18 @@ int main(void)
     printf("%ls\n", s);
     free(s);
     
-    return (0);
+    return 0;
 }
 ```
-
-## <mark style="color:red;">Enum Type</mark>
-
-They are arithmetic types and they are used to define variables that can only assign certain discrete integer values throughout the program.
-
-```c
-enum var { value1, value2, value3 };
-```
-
-The compiler actually treats enumeration identifiers as integer constants. first name in list is 0
-
-```c
-enum month thisMonth;
-thisMount = February;
-```
-
-The value 1 is assigned to thisMonth and not the name February because it is the second identifier listed inside the enumeration list.
-
-If you want to have a specific integer value associated with an enumeration identifier the integer can be signed to the identifier when the data type is defined.
-
-```c
-enum direction { up, down, left=10, right};
-                 1    2     10        11
-```
-
-#### An enumerated data type direction is defined with the values up, down, left, right up = 0 because it appears first in the list down = 1 cause its next left = 10 cause we said so right = 11 cause it appears immediately after left in the list.
 
 ## <mark style="color:red;">char</mark>
 
 Represents a single character such as the letter 'a'. always uses single quotes.
 
-**char var;** → a single character
+**char var;** → A single character.
 
 ```c
-var='t';
+var = 't';
 ```
 
 char grade = 65; → is valid for ASCII code but not recommended.
@@ -150,21 +124,19 @@ char grade = 65; → is valid for ASCII code but not recommended.
  \' → single quote
  \" → double quote
  \? → question mark ?
- \0oo → octal value. o represents an octal digit
- \xhh → hexadecimal value. h represents a hexadecimal digit
 ```
 
 ## <mark style="color:red;">Data Type Conversion Functions</mark>
 
 {% code overflow="wrap" %}
 ```c
- double a = atof(s) →  converts the string into a floating-point number, returning the result
+ double a = atof(s) → // Converts the string into a floating-point number, returning the result
  
- int a = atoi(s) → converts the string into an int, returning the result
+ int a = atoi(s) → // Converts the string into an int, returning the result
  
- int a = atol(s) → converts the string into a long int, returns result
+ int a = atol(s) → // Converts the string into a long int, returns result
  
- int a = atoll (s) → converts string into long long int, returns result 
+ int a = atoll (s) → // Converts string into long long int, returns result 
 ```
 {% endcode %}
 
@@ -172,69 +144,7 @@ char grade = 65; → is valid for ASCII code but not recommended.
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt="" width="536"><figcaption></figcaption></figure>
 
-## <mark style="color:red;">Complex Numbers</mark>
-
-A complex number is a number of the form A + Bi is is the square root of minus one (imaginary) a and b are real numbers.
-
-C11 doesn't support complex numbers so it implements the macro **STDC\_NO\_COMPLEX** in the header section.
-
-#### <mark style="color:purple;">To test whether your compiler supports complex or not:</mark>
-
-```c
-#ifdef __STDC_NO_COMPLEX__
-printf("complex arithmetic is not supported");
-#else
-printf("complex is supported");
-#endif
-```
-
-#### <mark style="color:purple;">Declaring complex numbers:</mark>
-
-```c
- double _Complex ;
- float_Complex;
- long double_Complex;
-```
-
-#### <mark style="color:purple;">If we include the complex.h header we can do it this way:</mark>
-
-```c
- double complex z1;
-```
-
-## <mark style="color:red;">Complex Functions</mark>
-
-**creal()** → returns the real part of a value of type double complex that is passed as the argument.
-
-**cimage()** → returns the imaginary part.
-
-```c
- double real_part = creal(z1);
- double imag_part = cimage(z1);
-```
-
-we append an f to these functions names when we are working with float complex values (crealf() and cimagef()) and a lowercase l when using with long complex ( creall() and cmagl())c
-
-**conj()** → returns the complex conjugate of its double complex.
-
-**conjf() and conjl()** → return the complex conjugate for the other two types long and float.
-
-## <mark style="color:red;">Imaginary Numbers</mark>
-
-#### <mark style="color:purple;">We can use \_imaginary keyword to define variables that store purely imaginary numbers.</mark>
-
-```c
-  double _Imaginary ix = 2.4*l;
-  float_Imaginary;
-```
-
-#### <mark style="color:purple;">if we include the complex.h header we can do it this way:</mark>
-
-```
- double imaginary ix = 2.4*l
-```
-
-## <mark style="color:red;">typedef</mark>
+## <mark style="color:red;">Typedef</mark>
 
 A keyword that allows us to create our own name for an existing data type.&#x20;
 
@@ -282,14 +192,16 @@ int main(){
     unsigned int b = 13; // 0000 1101
     int result = 0;
     int c = a & b; // 0000 1100
-    printf("result : %d", c);
+    
+    printf("result: %d", c);
+    
     return 0;
 }
 ```
 
 ## <mark style="color:red;">Difference between x++ and ++x</mark>
 
-**++x** happens prior to assignment (per-increment)
+**++x** happens prior to assignment (per-increment).
 
 **x++** happens after assignment (post-increment).&#x20;
 
@@ -297,7 +209,7 @@ int main(){
 
 **++x** increments the value and then executes the statement.
 
-## <mark style="color:red;">logical Operators</mark>
+## <mark style="color:red;">Logical Operators</mark>
 
 **&&** → AND operator, if both are non-zero the condition is true (A && B) is false.
 

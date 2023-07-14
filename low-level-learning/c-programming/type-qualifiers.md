@@ -33,13 +33,13 @@ Volatile means that the variable will change its value so tells the compiler to 
 
 #### <mark style="color:purple;">Only three types if variables should use volatile:</mark>
 
-* memory-mapped peripheral registers.
-* global variables modified by an interrupt service routine.
-* global variables accessed by multiple tasks within a multi-threaded application.
+* Memory-mapped peripheral registers.
+* Global variables modified by an interrupt service routine.
+* Global variables accessed by multiple tasks within a multi-threaded application.
 
 ```c
 volatile int z; 
-volatile int * z;
+volatile int *z;
 ```
 
 ## <mark style="color:red;">Storage classes</mark>
@@ -60,10 +60,10 @@ A variables visibility or linkage determines for a multiple-source-file program 
 
 #### <mark style="color:purple;">C provides 4 storage classes:</mark>
 
-1. auto
-2. register
-3. extern
-4. static
+1. auto.
+2. register.
+3. extern.
+4. static.
 
 #### <mark style="color:purple;">The 4 classes can be split into 2 storage duration:</mark>
 
@@ -85,11 +85,11 @@ its better not to use auto as a storage-class specifier in c/c++.
 
 ## <mark style="color:red;">External variables</mark>
 
-Functions contained in separate files can communicate through external variables, an extension to the concept of global variable
+Functions contained in separate files can communicate through external variables, an extension to the concept of global variable.
 
 A global var can be accessed and changed by other modules (files).
 
-In the module that wants to access the external variable the data type is preceded with the key word extern in the declaration, tells the compiler that a globally defined variable from another file is to be accessed
+In the module that wants to access the external variable the data type is preceded with the key word extern in the declaration, tells the compiler that a globally defined variable from another file is to be accessed.
 
 #### <mark style="color:purple;">Example:</mark>&#x20;
 
@@ -119,11 +119,11 @@ If the below declaration is made outside any function it makes the value of the 
 
 ## <mark style="color:red;">Register</mark>
 
-**We can store variables of any kind in CPU registers as well which is much faster than RAM**.&#x20;
+We can store variables of any kind in CPU registers as well which is much faster than RAM.&#x20;
 
 This should be used only or variables that require quick access.&#x20;
 
-**It is the compilers choice to put it in a register or not.**&#x20;
+It is the compilers choice to put it in a register or not.&#x20;
 
 It might be stored in a register depending on hardware and implementation restrictions.
 

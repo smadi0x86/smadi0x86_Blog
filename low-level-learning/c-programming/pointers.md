@@ -49,7 +49,7 @@ int number = 2; int *numberPointer = &number;
 
 Pointers must have the same variable type of the address values that contain the data for example char pointer, float pointer etc...
 
-#### <mark style="color:purple;">**%p**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">→ represents the format specified for a pointer.</mark>
+#### <mark style="color:purple;">**%p**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">→</mark> Represents the format specified for a pointer.
 
 **int \*pointer = NULL;** → is the equivalent of zero for a pointer, it doesn't point to any location in the memory.
 
@@ -64,15 +64,15 @@ int *pnumber = &number;
 
 ## <mark style="color:red;">De-referencing pointer to value</mark>
 
-**printf("%p",pnumber);** → prints the pointer value printf("%d",\*pnumber); → prints the value that its pointed to (number).
+**printf("%p", pnumber);** → prints the pointer value printf("%d",\*pnumber); → prints the value that its pointed to (number).
 
 ## <mark style="color:red;">**D**</mark><mark style="color:red;">isplaying an address without a pointer</mark>
 
-**printf("number address: %p",\&number);**
+**printf("number address: %p", \&number);**
 
 #### or
 
-**printf("number address: %p",(void**_**)\&number);** → (void_) cast is to prevent possible warning from the compiler.
+**printf("number address: %p", (void**_**) \&number);** → (void_) cast is to prevent possible warning from the compiler.
 
 #### <mark style="color:purple;">Example:</mark>
 
@@ -99,7 +99,7 @@ printf("value pointed to: %d\n", *pnumber); // value at the address
 
 **pnumber = \&value;**
 
-**\*pnumber += 25;** → the value of "value" variable is incremented by 25.
+**\*pnumber += 25;** → The value of "value" variable is incremented by 25.
 
 #### <mark style="color:purple;">Example:</mark>
 
@@ -112,6 +112,7 @@ pnum = &num1;   // get address of num1
 *pnum = 2l;     // set num1 to 2
 pnum = &num2;   // get address of num2
 ++*pnum;        // encriment num2 indirectly
+
 printf("num1 = %ld num2=%ld *pnum = %ld *pnum + num2 = %ld\n", num1, num2, *pnum, *pnum+num2);
 ```
 
@@ -170,16 +171,14 @@ char ch = 'k';
 void *vptr;
 
 vptr = &i;
-printf("value of i=%d\n",*(int *)vptr);
+printf("value of i=%d\n", *(int *) vptr);
 
 vptr = &f;
-printf("value of f=%f\n",*(float *)vptr);
+printf("value of f=%f\n", *(float *) vptr);
 
 vptr = &ch;
-printf("value of ch=%c\n",*(char *)vptr);
+printf("value of ch=%c\n", *(char *) vptr);
 ```
-
-**void \_pointer;**\_\*\* (data\_type \*)pointer\*\* → use this format to assign a data type to a void pointer.
 
 ## <mark style="color:red;">Pointers and arrays</mark>
 
@@ -191,7 +190,7 @@ In pointers to arrays we point to each value of the array specifically and not t
 
 <pre class="language-c"><code class="lang-c"> int values[100];
  int *pvalues;
- pvalues = values;  // → point to the first element of the values array
+ pvalues = values;  // point to the first element of the values array
 <strong> // or
 </strong> pvalue  = &#x26;values[0]
  pvalue  = &#x26;values[1] → second element
@@ -240,7 +239,7 @@ This expression can be used to access the value contained in values\[i].
 
 #### <mark style="color:purple;">For example to set vales\[10] to 27:</mark>
 
-<pre class="language-c"><code class="lang-c">values[10]=27;
+<pre class="language-c"><code class="lang-c">values[10] = 27;
 <strong>// or
 </strong>*(pvalues + 10) = 27;
 </code></pre>
@@ -327,20 +326,20 @@ int main(){
 
     int size=0, counter=0;
     
-    printf("\nenter the size of the array: ");
+    printf("\n Enter the size of the array: ");
     
-    scanf("%d",&size);
+    scanf("%d", &size);
     int array[size];
     int *ptr = array;
 
     while(counter < size ){
-        printf("\nenter element number %d : ", counter);
+        printf("\n Enter element number %d : ", counter);
         scanf("%d",&(*(ptr+counter)));
         counter += 1;
     }
 
 for (int j=0; j < size; j++){
-    printf("\nelement number %d: %d\n", j, *(ptr+j));
+    printf("\n Element number %d: %d\n", j, *(ptr+j));
 }
     return 0;
 }
@@ -382,19 +381,19 @@ int main(void){
 ```c
  // A program to take string length without strlen function
  
-int stringLength(const char *string){\
+int stringLength(const char *string){
 
     const char *lastAddress = string;
     
     while (*lastAddress)
         ++lastAddress;
-    return lastAddress - string;}
+        return lastAddress - string;}
 
 int main(){
 
-    printf("%d\n", stringLength("this is a test"));
-    printf("%d\n", stringLength("this is another test"));
-    printf("%d\n", stringLength("and another one:)"));
+    printf("%d\n", stringLength("This is a test"));
+    printf("%d\n", stringLength("This is another test"));
+    printf("%d\n", stringLength("And another one :)"));
 }
 ```
 
@@ -402,8 +401,8 @@ int main(){
 
 #### <mark style="color:purple;">There are few ways to pass data to a function:</mark>
 
-1. pass by value
-2. pass by reference
+1. Pass by value.
+2. Pass by reference.
 
 #### <mark style="color:purple;">Example pass by value:</mark>
 
@@ -413,7 +412,7 @@ void swap(int x, int y){
     int temp;
     
     temp = x;  // save the value of x
-    x=y;       // put y into x
+    x = y;     // put y into x
     y = temp;  // put temp into y
     
     return 0;
@@ -428,7 +427,7 @@ void swap(int x, int y){
     int temp;
     
     temp = *x;  // save the value at address x
-    *x =*y;     // put y into x
+    *x = *y;     // put y into x
     *y = temp;  // put temp into y
     
     return 0;
@@ -477,7 +476,7 @@ int main(void){
  }
 ```
 
-
+***
 
 ## <mark style="color:red;">Double pointers (pointer to a pointer)</mark>
 
@@ -624,125 +623,5 @@ printf("%s\n",ptr);
 free(ptr);
 
     return 0;
-}
-```
-
-## <mark style="color:red;">Function Pointers</mark>
-
-A function pointer can be used as an argument to another function telling the second function which function to use.
-
-Another use case is to create a dispatch table, tables that contain pointers to functions to be called.
-
-Menu-driven systems are also a common use of function pointers.
-
-You can use them to replace switch/if statements.
-
-```c
-int (*pfunction) (int);
-```
-
-Declare a variable that is a pointer to a function.&#x20;
-
-Doesn't point to anything, just defines a pointer.&#x20;
-
-The name of the pointer is pfunction.&#x20;
-
-The declaration without the parentheses **int \*pfunction(int);** will declare a function pfunction that returns an integer pointer that is not our intention in this case.
-
-#### <mark style="color:purple;">To assign the pointer to an existing function simply assign the name of the function to it:</mark>
-
-<pre class="language-c"><code class="lang-c">pfunction = lookup;
-<strong>// or
-</strong>pfunction = &#x26;lookup;
-</code></pre>
-
-#### <mark style="color:purple;">To call it:</mark>
-
-```c
-int value = pfunction(5);
-```
-
-Its common to use this typedefs with complex types such as function pointers.
-
-```c
-typedef int (funcptr)();
-
-funcptr testvar;
-
-int (*funcptr)();
-
-funcptr = func1;
-
-(*funcptr)(value);
-```
-
-The ID funcptr is now a synonym for the type of a pointer to function that takes no arguments and returns an integer.
-
-{% hint style="info" %}
-_\*\*\*\*_\*\* function returning pointer **\_**-->\*\*\_ **int \*func(int a , float b);**
-{% endhint %}
-
-{% hint style="info" %}
-\_\_ **pointer to function returning an integer** \_ **-->**\_\*\* int (\*func)(int a , float b)\*\*
-{% endhint %}
-
-#### <mark style="color:purple;">Example:</mark>
-
-```c
-#include <stdio.h>
-
-int somedisplay();
-
-int main(){
-
-    int (*funcptr)();
-    
-    funcptr = somedisplay;
-
-    printf("address of function somedisplay: %p\n",funcptr);
-
-    (*funcptr)();
-
-    return 0;
-}
-
-int somedisplay(){
-
-    printf("\ndisplaying some text\n");
-    return 0;
-};
-```
-
-#### <mark style="color:purple;">Example:</mark>
-
-```c
-#include <stdio.h>
-
-void func1(int);
-void func2(int);
-
-typedef void functype(int);
-
-int main(){
-
-functype *funcptr = NULL;
-funcptr = func1;
-
-    (*funcptr)(100);
-    
-    funcptr = func2;
-    
-    (*funcptr)(200);
-    
-    return 0;
-}
-
-
-void func1 (int testarg){
-    printf("function 1 got an argument: %d\n",testarg);
-}
-
-void func2(int testarg){
-    printf("function 2 got an argument: %d\n",testarg);
 }
 ```
