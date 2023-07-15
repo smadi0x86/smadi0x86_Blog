@@ -6,17 +6,17 @@ coverY: 0
 
 # CSRF
 
-#### Client side request forgery allows an attacker to induce users to perform actions that they do not intend to perform.
+Client side request forgery allows an attacker to induce users to perform actions that they do not intend to perform.
 
 ## <mark style="color:red;">Deliver a CSRF Exploit</mark>
 
 ### <mark style="color:yellow;">**Reflected XSS**</mark>
 
-#### <mark style="color:purple;">Attacker will place the malicious HTML onto a web site that they control.</mark>
+Attacker will place the malicious HTML onto a web site that they control.
 
 ### <mark style="color:yellow;">GET method</mark>
 
-<mark style="color:purple;">**Example**</mark>
+#### <mark style="color:purple;">**Example:**</mark>
 
 ```html
 <img src="https://vulnerable-website.com/email/change?email=attacker@evil-user.net"> 
@@ -29,8 +29,7 @@ coverY: 0
 * Some applications do not validate that the token belongs to the same session as the user who is making the request.
 * Some applications do tie the CSRF token to a cookie, but not to the same cookie that is used to track sessions.
 
-\
-<mark style="color:purple;">**Example**</mark>
+#### <mark style="color:purple;">**Example:**</mark>
 
 ```html
 <html>
@@ -46,12 +45,16 @@ coverY: 0
 ```
 
 * Some applications do not maintain any server-side record of tokens that have been issued.
-* Cookie **SasmeSite=Lax** bypass via method override. Change **POST** method to **Get** with **"\_method"** parameter. Example\
-  &#x20;`/change-email?email=attacker@attack.net&_method=POST`
+* Cookie **SomeSite=Lax** bypass via method override.&#x20;
+* Change **POST** method to **Get** with **"\_method"** parameter.&#x20;
+
+#### <mark style="color:purple;">Example:</mark>
+
+&#x20;`/change-email?email=attacker@attack.net&_method=POST`
 
 ## <mark style="color:red;">Defenses</mark>
 
-* [ ] CSRF tokens
-* [ ] HTTP cookie header (csrf-key)
-* [ ] Captcha
-* [ ] HTTP Referer header
+* [x] CSRF tokens.
+* [x] HTTP cookie header (CSRF-key).
+* [x] Captcha.
+* [x] HTTP Referrer header.
