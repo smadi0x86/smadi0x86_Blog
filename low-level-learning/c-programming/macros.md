@@ -175,7 +175,7 @@ int main(){
 ## <mark style="color:red;">Standard C pre-defined macros</mark>
 
 {% code overflow="wrap" %}
-```
+```c
 __FILE__  → represent the current file name (string)
 
 __LINE__ → represents the current line number of the current source code (an integer constant)

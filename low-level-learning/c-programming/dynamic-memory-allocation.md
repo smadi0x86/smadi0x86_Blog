@@ -84,14 +84,14 @@ Using malloc in this way is not always good because it might not work on differe
 Its better to remove the assumption that integers are 4 bytes and make sure our program works on any system architecture.
 
 ```c
- int *pnumber = (int*)malloc(25*sizeof(int));
+ int *pnumber = (int*)malloc(25 * sizeof(int));
 ```
 
 {% hint style="info" %}
 This code will now work in different OSs and different architectures.
 {% endhint %}
 
-25sizeof(int) indicates that sufficient bytes for accommodating 25 values of type int should be made available so this value is chosen by the compiler on different systems.
+25 \* sizeof(int) indicates that sufficient bytes for accommodating 25 values of type int should be made available so this value is chosen by the compiler on different systems.
 
 Also notice the cast (int) which converts the address returned by the function to the type pointer to int.
 
@@ -114,23 +114,6 @@ int main(){
         // code to deal with the memory shortage
     }
 }
-```
-
-## <mark style="color:red;">Releasing the memory</mark>
-
-Heap memory is automatically released after program exits.&#x20;
-
-A memory leak occurs when we allocate some memory dynamically and we don't retain the reference to it, so we are unable to release the memory.&#x20;
-
-Because we don't release the memory when we no longer need it, the program consumes more and more of the available memory on each loop iteration and eventually may occupy it all!&#x20;
-
-To free memory that we have allocated dynamically we must still have access to the address that references the block of memory.
-
-#### <mark style="color:purple;">To release the memory for a block of dynamically allocated memory whose address we have stored in a pointer:</mark>
-
-```c
-free(pnumber);
-pnumber = NULL;
 ```
 
 ## <mark style="color:red;">calloc</mark>
@@ -199,5 +182,22 @@ Now we are using the same memory address for new data.
 {% hint style="info" %}
 Avoid allocating lots of small amounts of memory.&#x20;
 
-Allocating memory on heap carries some overhead with it allocating many small blocks of memory will carry much more overhead than allocating fewer larger blocks
+Allocating memory on heap carries some overhead with it allocating many small blocks of memory will carry much more overhead than allocating fewer larger blocks.
 {% endhint %}
+
+## <mark style="color:red;">Releasing the memory</mark>
+
+Heap memory is automatically released after program exits.&#x20;
+
+A memory leak occurs when we allocate some memory dynamically and we don't retain the reference to it, so we are unable to release the memory.&#x20;
+
+Because we don't release the memory when we no longer need it, the program consumes more and more of the available memory on each loop iteration and eventually may occupy it all!&#x20;
+
+To free memory that we have allocated dynamically we must still have access to the address that references the block of memory.
+
+#### <mark style="color:purple;">To release the memory for a block of dynamically allocated memory whose address we have stored in a pointer:</mark>
+
+```c
+free(pnumber);
+pnumber = NULL;
+```
