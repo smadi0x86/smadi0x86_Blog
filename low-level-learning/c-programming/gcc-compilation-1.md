@@ -81,11 +81,11 @@ If your program uses a library called "libexample.so" or "example.dll" for certa
 
 The actual library is loaded when the program is executed.
 
-{% hint style="info" %}
-If you use a non-standard library, you must specify its location by:
+#### <mark style="color:purple;">If you use a non-standard library, you must specify its location by:</mark>
 
-&#x20;gcc main.c -o main -L /path/to/libraries -libexample.so or example.dll
-{% endhint %}
+```bash
+gcc main.c -o main -L /path/to/libraries -libexample.so or example.dll
+```
 
 ## <mark style="color:red;">Basic GCC syntax</mark>
 
@@ -141,11 +141,11 @@ Use **-O0** to disable them and use **-S** to output assembly.&#x20;
 
 Starting with **gcc 4.8** the optimization level **-Og** is available. It enables optimizations that do not interfere with debugging and is the recommended default for the standard edit-compile-debug cycle.
 
-{% hint style="info" %}
-To change the syntax of the assembly to either Intel or AT\&T use:
+#### <mark style="color:purple;">To change the syntax of the assembly to either Intel or AT\&T use:</mark>
 
-&#x20;\-masm=intel or -masm=att.
-{% endhint %}
+```bash
+-masm=intel or -masm=att.
+```
 
 ## <mark style="color:red;">​Optimization Flags</mark>
 

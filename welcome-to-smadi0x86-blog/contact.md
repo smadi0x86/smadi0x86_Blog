@@ -9,12 +9,9 @@ coverY: -123
 
 <img src="../.gitbook/assets/file.excalidraw.svg" alt="Send mail at: smadixd@gmail.com" class="gitbook-drawing">
 
-| Name                                                | Link                                                                                                     |
-| --------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| <mark style="color:red;">**`Linkedin`**</mark>      | [https://www.linkedin.com/in/saud-smadi/](https://www.linkedin.com/in/saud-smadi/)                       |
-| <mark style="color:red;">**`Github`**</mark>        | [https://github.com/smadi0x86](https://github.com/smadi0x86)                                             |
-| <mark style="color:red;">**`Gitlab`**</mark>        | [https://gitlab.com/smadi0x86](https://gitlab.com/smadi0x86)                                             |
-| <mark style="color:red;">**`Telegram`**</mark>      | [https://t.me/rootsmadi](https://t.me/rootsmadi)                                                         |
-| <mark style="color:red;">**`Twitter`**</mark>       | [https://twitter.com/smadi0x86](https://twitter.com/smadi0x86)                                           |
-| <mark style="color:red;">**`StackOverFlow`**</mark> | [https://stackoverflow.com/users/15253893/smadi0x86](https://stackoverflow.com/users/15253893/smadi0x86) |
-| <mark style="color:red;">**`Portfolio`**</mark>     | [https://smadi0x86.me](https://smadi0x86.me)                                                             |
+| Name                                            | Link                                                                               |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------- |
+| <mark style="color:red;">**`Portfolio`**</mark> | [https://smadi0x86.me](https://smadi0x86.me)                                       |
+| <mark style="color:red;">**`Linkedin`**</mark>  | [https://www.linkedin.com/in/saud-smadi/](https://www.linkedin.com/in/saud-smadi/) |
+| <mark style="color:red;">**`Telegram`**</mark>  | [https://t.me/rootsmadi](https://t.me/rootsmadi)                                   |
+| <mark style="color:red;">**`Twitter`**</mark>   | [https://twitter.com/smadi0x86](https://twitter.com/smadi0x86)                     |

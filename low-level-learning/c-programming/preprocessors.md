@@ -52,7 +52,7 @@ Its also used to switch on or off various statements in the program, trace the f
 #### <mark style="color:purple;">#if → Test the value of a constant expression.</mark>
 
 {% hint style="info" %}
-**Every #if construct ends with an #endif.**
+Every #if construct ends with an #endif.
 {% endhint %}
 
 #### <mark style="color:purple;">#else → To complement #ifdef/#ifndef and #if.</mark>
@@ -64,7 +64,7 @@ Its also used to switch on or off various statements in the program, trace the f
 #### <mark style="color:purple;">#ifndef → The negative of the ifdef.</mark>
 
 {% hint style="info" %}
-**Directives #ifdef and #ifndef are provided as shorthand for:**
+Directives #ifdef and #ifndef are provided as shorthand for:
 
 `if defined(name)`
 
@@ -79,7 +79,7 @@ Its also used to switch on or off various statements in the program, trace the f
 
 #### <mark style="color:purple;">Example:</mark>
 
-`#define UNIX 1 OR #define UNIX`\\
+`#define UNIX 1 OR #define UNIX`
 
 #### <mark style="color:purple;">Example:</mark>
 
@@ -87,15 +87,19 @@ Its also used to switch on or off various statements in the program, trace the f
 #ifdef UNIX
 #define DATADIR "/dev/data"
 #elif UNIX = "/data"
+
 #define DATADIR "/usr/data"
 #else
 #define DATADIR "/dev/null"
+
 #endif
 ```
 
 #### <mark style="color:purple;">Most compilers also permit you to define a name to the preprocessor when the program is compiled using the special option -D:</mark>
 
-`gcc -D UNIX main.c`
+```bash
+gcc -D UNIX main.c
+```
 
 ## <mark style="color:red;">Pragma</mark>
 
@@ -104,7 +108,7 @@ Lets you place compiler instructions in the source code.&#x20;
 To control the amount of memory set aside for automatic variables to set the strictness of error checking to enable nonstandard language features.
 
 {% hint style="info" %}
-#### pragma token\_name → token\_name is a command for the compiler to obey.
+Pragma token\_name → token\_name is a command for the compiler to obey.
 {% endhint %}
 
 #### <mark style="color:purple;">gcc has the following pragmas:</mark>
@@ -128,13 +132,14 @@ To control the amount of memory set aside for automatic variables to set the str
 ```
 
 {% hint style="info" %}
-#### pragma GCC poison → used to remove an identifier completely from the program.
+Pragma GCC poison → used to remove an identifier completely from the program.
 {% endhint %}
 
 #### <mark style="color:purple;">Example:</mark>
 
 ```c
 #pragma GCC poison printf sprintf fprintf
+
 sprintf(some_string,"hello"); // This will raise an error.
 ```
 
@@ -169,7 +174,7 @@ Error Not C11
 
 ## <mark style="color:red;"># and ## operators</mark>
 
-Used for concatenation.&#x20;
+These are used for concatenation.&#x20;
 
 Often useful to merge two tokens into one while expanding macros (called token pasting or token concatenation).
 
@@ -196,6 +201,7 @@ int xy = 10;
 
 <strong>// This will make the compiler turn:
 </strong>printf("%d", concat(x,y));
+
 // To: 
 printf("%d", xy);
 </code></pre>
