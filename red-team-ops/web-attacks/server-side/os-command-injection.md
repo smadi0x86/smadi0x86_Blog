@@ -6,7 +6,7 @@ coverY: 0
 
 # OS Command Injection
 
-#### OS command injection (also known as shell injection) is a web security vulnerability that allows an attacker to execute arbitrary operating system (OS) commands on the server that is running an application, and typically fully compromise the application and all its data.
+OS command injection (also known as shell injection) is a web security vulnerability that allows an attacker to execute arbitrary operating system (OS) commands on the server that is running an application, and typically fully compromise the application and all its data.
 
 ## <mark style="color:red;">Useful commands</mark>
 

