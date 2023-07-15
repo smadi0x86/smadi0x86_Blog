@@ -198,7 +198,7 @@ We are appending the value of the current item's name to the DOM without any inp
 
 ### <mark style="color:yellow;">Mitigation</mark>
 
-We will follow suit with the **Stored XSS** and **Reflected XSS** defensive techniques, in the sense that first things first we have to **escape** all user input.&#x20;
+We will follow suit with the Stored XSS and Reflected XSS defensive techniques, in the sense that first things first we have to escape all user input.&#x20;
 
 #### <mark style="color:purple;">Since our code is plain JavaScript, we have to create a new function that does that for us:</mark>
 
@@ -231,7 +231,7 @@ document.getElementById('currentItemName').textContext = escapeHTML(type);
 2. JavaScript execution is locked down, with the use of CSP.
 3. Both 1. and 2. are followed simultaneously.
 
-A developer will leave **little to no room** to XSS attacks in their application.
+A developer will leave little to no room to XSS attacks in their application.
 
 {% hint style="info" %}
 You can find more details about this topic here:
