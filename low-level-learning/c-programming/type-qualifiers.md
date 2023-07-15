@@ -77,7 +77,7 @@ Created when the block in which they are defined is entered, exits while the blo
 
 All local variables have auto storage duration by default.
 
-its better not to use auto as a storage-class specifier in c/c++.
+Its better not to use auto as a storage-class specifier in c/c++.
 
 ```c
  auto int var;

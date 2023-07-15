@@ -21,12 +21,12 @@ layout:
 
 ## <mark style="color:red;">Integer</mark>
 
-**int** → 4.\
-**float** → 12.585, -.0001 ( stores less values than double).\
-**double** → same as float but stores twice the precision.
+int → 4.\
+float → 12.585, -.0001 ( stores less values than double).\
+double → same as float but stores twice the precision.
 
 {% hint style="info" %}
-**To explicitly express a float constant, append either an f or F to the end of the number e.g: 12.54f**
+To explicitly express a float constant, append either an f or F to the end of the number e.g: 12.54f
 {% endhint %}
 
 ## <mark style="color:red;">Boolean</mark>
@@ -36,7 +36,7 @@ Boolean data type for storing 0 or 1 values.
 Used for on/off, yes/no, true/false situation (binary choices).
 
 {% hint style="info" %}
-Include **\<stdbool.h>** to use bool instead of \_Bool.
+Include \<stdbool.h> to use bool instead of \_Bool.
 {% endhint %}
 
 <pre class="language-c"><code class="lang-c">#include &#x3C;stdbool.h>
@@ -60,7 +60,7 @@ bool var = true;
 
 ## <mark style="color:red;">size\_t</mark>
 
-**size\_t** → Used to represent the size of objects in bytes and is therefore used as the return type by the sizeof operator.&#x20;
+size\_t → Used to represent the size of objects in bytes and is therefore used as the return type by the sizeof operator.&#x20;
 
 size\_t is a type guaranteed to hold any array index only for non-negative values.
 
@@ -100,9 +100,11 @@ int main(void)
 
 ## <mark style="color:red;">char</mark>
 
-Represents a single character such as the letter 'a'. always uses single quotes.
+Represents a single character such as the letter 'a'.&#x20;
 
-**char var;** → A single character.
+{% hint style="info" %}
+Char always uses single quotes.
+{% endhint %}
 
 ```c
 var = 't';

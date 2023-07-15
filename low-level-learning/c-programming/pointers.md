@@ -49,7 +49,7 @@ int number = 2; int *numberPointer = &number;
 
 Pointers must have the same variable type of the address values that contain the data for example char pointer, float pointer etc...
 
-#### <mark style="color:purple;">**%p**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">→</mark> Represents the format specified for a pointer.
+%p ->Represents the format specified for a pointer.
 
 **int \*pointer = NULL;** → is the equivalent of zero for a pointer, it doesn't point to any location in the memory.
 
@@ -70,7 +70,7 @@ int *pnumber = &number;
 
 **printf("number address: %p", \&number);**
 
-#### or
+or
 
 **printf("number address: %p", (void**_**) \&number);** → (void_) cast is to prevent possible warning from the compiler.
 
@@ -492,7 +492,7 @@ A pointer which points to another pointer is called a double pointer and is work
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (56).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (56) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (76).png" alt="" width="563"><figcaption></figcaption></figure>
 

@@ -17,5 +17,5 @@ layout:
     visible: true
 ---
 
-# String Manipulation
+# Bit Manipulation
 
