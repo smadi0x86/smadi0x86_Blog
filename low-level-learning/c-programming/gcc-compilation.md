@@ -91,10 +91,8 @@ A special character with the code value 0 is added to the end of each string to 
 
 A string is always terminated by a null character so the length of a string is always one greater than the number of characters in the string that's why length - 1 is commonly used.
 
-We can add a "\0" to the end of a string, this will create two strings but only the first one will be printed.
-
 {% hint style="info" %}
-#### NULL is a symbol that represents memory address that doesn't reference anything.
+NULL is a symbol that represents memory address that doesn't reference anything.
 {% endhint %}
 
 ## <mark style="color:red;">Modular programming</mark>
@@ -135,7 +133,7 @@ Here we define the **getme() function** which was referred to by header and will
 
 3. Include the header in main.c and use the function:&#x20;
 
-<mark style="color:orange;">**Create main.c, include other.h and use getme() function.**</mark>
+<mark style="color:orange;">**Create main.c, include other.h, and use getme() function.**</mark>
 
 ```c
 #include <stdio.h>
@@ -157,5 +155,5 @@ Here we have to include the header file with "double quotations" cause we know i
 <mark style="color:orange;">**gcc \*.c -o \[program name].**</mark>
 
 {% hint style="info" %}
-**Use with -c instead of  -o to get object files.**
+Use with -c flag instead of -o flag to get object files.
 {% endhint %}

@@ -21,7 +21,7 @@ layout:
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
-#### Should always use capital letters for macro functions and there are no spaces in names and its limited to one line only.
+Should always use capital letters for macro functions and there are no spaces in names and its limited to one line only.
 
 #### <mark style="color:purple;">Example:</mark>
 
