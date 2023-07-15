@@ -142,9 +142,9 @@ Use **-O0** to disable them and use **-S** to output assembly.&#x20;
 Starting with **gcc 4.8** the optimization level **-Og** is available. It enables optimizations that do not interfere with debugging and is the recommended default for the standard edit-compile-debug cycle.
 
 {% hint style="info" %}
-#### To change the syntax of the assembly to either Intel or AT\&T use:
+To change the syntax of the assembly to either Intel or AT\&T use:
 
-#### &#x20;-masm=intel or -masm=att.
+&#x20;\-masm=intel or -masm=att.
 {% endhint %}
 
 ## <mark style="color:red;">​Optimization Flags</mark>

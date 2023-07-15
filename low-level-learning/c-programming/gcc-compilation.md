@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
 
 A special character with the code value 0 is added to the end of each string to mark where it ends.
 
-A string is always terminated by a null character so the length of a string is always one greater than the number of characters in the string that's why length - 1 is commonly used.
+A string is always terminated by a null character so the length of a string is always one greater than the number of characters in the string that's why "length - 1" is commonly used.
 
 {% hint style="info" %}
 NULL is a symbol that represents memory address that doesn't reference anything.
