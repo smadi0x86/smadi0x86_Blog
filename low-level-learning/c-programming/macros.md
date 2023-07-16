@@ -19,9 +19,9 @@ layout:
 
 # Macros
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
-
 Should always use capital letters for macro functions and there are no spaces in names and its limited to one line only.
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### <mark style="color:purple;">Example:</mark>
 
