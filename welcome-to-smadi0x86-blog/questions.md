@@ -89,6 +89,8 @@ coverY: -127
 
 ### [Argc and argv in C?](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)
 
+### [Difference between char \*argv\[\] and char \*\*argv?](https://stackoverflow.com/questions/27213580/difference-between-char-argv-and-char-argv-for-the-second-argument-to-main)
+
 ### [Why is C/C++ main argv declared as "char\* argv\[\]" rather than just "char\* argv"?](https://softwareengineering.stackexchange.com/questions/385819/why-is-c-c-main-argv-declared-as-char-argv-rather-than-just-char-argv)
 
 ### [How are local variables stored at stack memory?](https://stackoverflow.com/questions/50524734/how-the-local-variable-stored-in-stack)
