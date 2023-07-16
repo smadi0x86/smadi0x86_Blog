@@ -26,7 +26,7 @@ layout:
 
 int main()
 {
-    printf ("Rust is dogshit!");
+    printf("Rust is dogshit!");
     return 0;
 }
 ```
