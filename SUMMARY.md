@@ -24,6 +24,8 @@
   * [Pointers](low-level-learning/c-programming/pointers.md)
   * [Dynamic Memory Allocation](low-level-learning/c-programming/dynamic-memory-allocation.md)
   * [Macros](low-level-learning/c-programming/macros.md)
+  * [Files](low-level-learning/c-programming/error-recovery.md)
+  * [I/O](low-level-learning/c-programming/error-recovery-1.md)
   * [Strings Manipulation](low-level-learning/c-programming/bit-manipulation.md)
   * [Bit Manipulation](low-level-learning/c-programming/bit-manipulation-1.md)
   * [Data Structures](low-level-learning/c-programming/data-structures/README.md)
@@ -31,7 +33,7 @@
     * [Structs](low-level-learning/c-programming/data-structures/data-structures-1.md)
   * [Abstract Data Types](low-level-learning/c-programming/abstract-data-types.md)
   * [Libraries & Linking](low-level-learning/c-programming/libraries-and-linking.md)
-  * [Error Recovery](low-level-learning/c-programming/error-recovery.md)
+  * [Error Recovery](low-level-learning/c-programming/error-recovery-2.md)
 * [x86 Assembler](low-level-learning/x86-assembler.md)
 * [GNU Debugger](low-level-learning/gnu-debugger.md)
 
