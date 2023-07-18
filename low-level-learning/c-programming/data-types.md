@@ -23,6 +23,8 @@ layout:
 
 int is typically 4 bytes.
 
+\_t is types that are designed to be cross-platform compatible, which means they include the given number of bytes no matter what system they run on.
+
 #### <mark style="color:purple;">You can specify any byte size to int using:</mark>
 
 ```c
