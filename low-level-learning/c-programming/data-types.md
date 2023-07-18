@@ -21,12 +21,18 @@ layout:
 
 ## <mark style="color:red;">Integer</mark>
 
-int → 4.\
-float → 12.585, -.0001 ( stores less values than double).\
-double → same as float but stores twice the precision.
+int is typically 4 bytes.
+
+#### <mark style="color:purple;">You can specify any byte size to int using:</mark>
+
+```c
+uint32_t // This is an int that holds 32 bytes (0 to 4294967295)
+// or
+int32_t // -2147483648 to 2147483647
+```
 
 {% hint style="info" %}
-To explicitly express a float constant, append either an f or F to the end of the number e.g: 12.54f
+You don't have to specify the u = unsigned, it's commonly used to represent the values that are non-negative which saves memory space.
 {% endhint %}
 
 ## <mark style="color:red;">Boolean</mark>
