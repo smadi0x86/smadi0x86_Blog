@@ -12,6 +12,8 @@
 
 * [Generic Programming](general/generic-programming.md)
 * [Packet Tracer](general/packet-tracer.md)
+* [Serverless Functions](general/serverless-functions.md)
+* [JSON Web Tokens](general/json-web-tokens.md)
 
 ## 🤖 Low Level Learning
 
