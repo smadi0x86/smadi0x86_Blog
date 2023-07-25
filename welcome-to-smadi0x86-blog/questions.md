@@ -85,7 +85,7 @@ coverY: -127
 
 ### [What are shared libraries in linux?](https://www.tecmint.com/understanding-shared-libraries-in-linux/)
 
-### [What is parsing?](https://stackoverflow.com/questions/1788796/what-is-parsing)
+### [What is parsing?](https://stackoverflow.com/questions/2933192/what-is-parsing-in-terms-that-a-new-programmer-would-understand)
 
 ### [Argc and argv in C?](https://www.geeksforgeeks.org/command-line-arguments-in-c-cpp/)
 
