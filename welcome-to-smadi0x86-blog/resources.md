@@ -109,7 +109,7 @@ coverY: -122
 
 ## <mark style="color:yellow;">`Reverse Engineering & Malware Analysis`</mark>
 
-{% embed url="https://www.usenix.org/system/files/conference/woot16/woot16-paper-blackthorne_update.pdf" %}
+{% embed url="https://www.blackhat.com/docs/us-16/materials/us-16-Bulazel-AVLeak-Fingerprinting-Antivirus-Emulators-For-Advanced-Malware-Evasion.pdf" %}
 
 {% embed url="https://hshrzd.wordpress.com/how-to-start/" %}
 
