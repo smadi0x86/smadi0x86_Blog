@@ -109,6 +109,8 @@ coverY: -122
 
 ## <mark style="color:yellow;">`Reverse Engineering & Malware Analysis`</mark>
 
+{% embed url="https://www.usenix.org/system/files/conference/woot16/woot16-paper-blackthorne_update.pdf" %}
+
 {% embed url="https://hshrzd.wordpress.com/how-to-start/" %}
 
 {% embed url="https://cfp.recon.cx/2022/talk/UJYPAS/" %}
