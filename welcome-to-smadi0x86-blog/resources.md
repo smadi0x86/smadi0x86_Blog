@@ -21,6 +21,8 @@ coverY: -122
 
 {% file src="../.gitbook/assets/x86_assembly_reversing_cheat_sheet.pdf" %}
 
+{% embed url="https://tbhaxor.com/understanding-address-spacing-in-detail/" %}
+
 {% embed url="https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/x86-architecture" %}
 
 {% embed url="https://none.cs.umass.edu/~shenoy/courses/fall16/lectures.html" %}
