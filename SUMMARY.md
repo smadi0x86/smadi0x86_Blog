@@ -12,8 +12,6 @@
 
 * [Generic Programming](general/generic-programming.md)
 * [Packet Tracer](general/packet-tracer.md)
-* [Serverless Functions](general/serverless-functions.md)
-* [JSON Web Tokens](general/json-web-tokens.md)
 
 ## 🤖 Low Level Learning
 
@@ -86,6 +84,10 @@
 ## ♾ DevSecOps
 
 * [AZ-900](devsecops/az-900.md)
+* [AWS CLI](devsecops/aws-cli.md)
+* [JSON Web Tokens](devsecops/json-web-tokens.md)
+* [Gitlab](devsecops/gitlab.md)
+* [Git](devsecops/git.md)
 
 ## 🪛 Hardware Hacking
 
