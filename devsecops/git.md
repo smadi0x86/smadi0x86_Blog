@@ -23,6 +23,18 @@ git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
 
+#### <mark style="color:purple;">To list all global configurations:</mark>
+
+```bash
+git config --global --list
+```
+
+#### <mark style="color:purple;">To unset a specific configuration (e.g., username):</mark>
+
+```bash
+git config --global --unset user.name
+```
+
 ## <mark style="color:red;">Setting Up GitLab</mark>
 
 ### <mark style="color:yellow;">Create a New Repository</mark>
@@ -305,20 +317,6 @@ git fetch
 
 ```bash
 git merge branch_name
-```
-
-### <mark style="color:yellow;">Configurations and Settings</mark>
-
-#### <mark style="color:purple;">To list all global configurations:</mark>
-
-```bash
-git config --global --list
-```
-
-#### <mark style="color:purple;">To unset a specific configuration (e.g., username):</mark>
-
-```bash
-git config --global --unset user.name
 ```
 
 ### <mark style="color:yellow;">Tagging</mark>
