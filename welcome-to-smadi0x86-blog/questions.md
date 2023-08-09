@@ -13,6 +13,8 @@ coverY: -127
 
 ### [What is origin/HEAD in git?](https://stackoverflow.com/a/2883250/15253893)
 
+### [Gitlab CI vs Travis CI?](https://stackoverflow.com/questions/31338775/how-do-travis-ci-and-gitlab-ci-compare)
+
 ### [Clone repo using SSH or HTTPS?](https://www.howtogeek.com/devops/should-you-use-https-or-ssh-for-git/)
 
 ### [Compile asm with gcc?](https://stackoverflow.com/questions/7190050/how-do-i-compile-the-asm-generated-by-gcc)
