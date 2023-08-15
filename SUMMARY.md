@@ -88,6 +88,7 @@
 * [JSON Web Tokens](devsecops/json-web-tokens.md)
 * [Gitlab](devsecops/gitlab.md)
 * [Git](devsecops/git.md)
+* [Test](devsecops/test.md)
 
 ## 🪛 Hardware Hacking
 
