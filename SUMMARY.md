@@ -39,7 +39,7 @@
       * [Single](low-level-learning/c-programming/abstract-data-types/abstract-data-types-2/abstract-data-types.md)
       * [Double](low-level-learning/c-programming/abstract-data-types/abstract-data-types-2/abstract-data-types-1.md)
   * [Error Recovery](low-level-learning/c-programming/error-recovery-2.md)
-* [x86 Assembler](low-level-learning/x86-assembler.md)
+* [x86 Assembly](low-level-learning/x86-assembler.md)
 * [GNU Debugger](low-level-learning/gnu-debugger.md)
 
 ## 🩸 Red Team Ops
