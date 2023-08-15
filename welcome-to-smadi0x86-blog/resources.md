@@ -21,6 +21,8 @@ coverY: -122
 
 {% embed url="https://wiki.osdev.org/Main_Page/" %}
 
+{% embed url="https://www.qemu.org/download/#linux" %}
+
 {% file src="../.gitbook/assets/x86_assembly_reversing_cheat_sheet.pdf" %}
 
 {% embed url="https://tbhaxor.com/understanding-address-spacing-in-detail/" %}
