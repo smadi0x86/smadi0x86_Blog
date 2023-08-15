@@ -19,6 +19,8 @@ coverY: -122
 
 {% embed url="https://thomwiggers.nl/teaching/hacking-in-c-2020/lectures/#lecture-1" %}
 
+{% embed url="https://wiki.osdev.org/Main_Page/" %}
+
 {% file src="../.gitbook/assets/x86_assembly_reversing_cheat_sheet.pdf" %}
 
 {% embed url="https://tbhaxor.com/understanding-address-spacing-in-detail/" %}
