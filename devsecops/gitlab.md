@@ -7,47 +7,52 @@ description: >-
 
 # Gitlab
 
-#### **1. Installing GitLab on Debian:**
+## <mark style="color:red;">I</mark><mark style="color:red;">**nstalling GitLab on Debian**</mark>
 
-**Preparation:**
+### <mark style="color:yellow;">**Preparation**</mark>
 
-*   Update and upgrade your system:
+#### <mark style="color:purple;">Update and upgrade your system:</mark>
 
-    ```bash
-    bashCopy codesudo apt-get update && sudo apt-get upgrade
-    ```
-*   Install necessary dependencies:
+```bash
+sudo apt-get update && sudo apt-get upgrade
+```
 
-    ```bash
-    bashCopy codesudo apt-get install -y curl openssh-server ca-certificates
-    ```
+#### <mark style="color:purple;">Install necessary dependencies:</mark>
 
-**GitLab Installation:**
+```bash
+sudo apt-get install -y curl openssh-server ca-certificates
+```
 
-*   Add the GitLab repository and install the package:
+### <mark style="color:yellow;">**GitLab Installation**</mark>
 
-    ```bash
-    bashCopy codecurl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
-    sudo apt-get install gitlab-ce
-    ```
-*   Configure GitLab:
+#### <mark style="color:purple;">Add the GitLab repository and install the package:</mark>
 
-    ```bash
-    bashCopy codesudo gitlab-ctl reconfigure
-    ```
-* Access GitLab: Navigate to your server's IP address or domain in your web browser. Set your root password when prompted.
+```bash
+curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | sudo bash
+sudo apt-get install gitlab-ce
+```
 
-#### **2. Your First Project on GitLab:**
+#### <mark style="color:purple;">Configure GitLab:</mark>
+
+```bash
+sudo gitlab-ctl reconfigure
+```
+
+#### <mark style="color:purple;">Access GitLab:</mark>&#x20;
+
+Navigate to your server's IP address or domain in your web browser. Set your root password when prompted.
+
+## <mark style="color:red;">**Your First Project on GitLab**</mark>
 
 * After logging in, click on the "New project" button.
 * Provide a name and other details, then "Create Project".
 
-#### **3. Interacting with Your Repository:**
+## <mark style="color:red;">**Interacting with Your Repository**</mark>
 
-Clone, modify, and push:
+#### <mark style="color:purple;">Clone, modify, and push:</mark>
 
 ```bash
-bashCopy codegit clone <repository_url>
+git clone <repository_url>
 cd <repository_name>
 echo "# My GitLab Project" > README.md
 git add README.md
@@ -55,15 +60,16 @@ git commit -m "Initial commit"
 git push origin master
 ```
 
-#### **4. CI/CD with GitLab:**
+## <mark style="color:red;">**CI/CD with GitLab**</mark>
 
-**Setting Up Basic CI/CD:**
+#### <mark style="color:purple;">**Setting Up Basic CI/CD:**</mark>
 
 * In your project, create a `.gitlab-ci.yml` file.
-* For a simple Node.js application, the CI pipeline can be:
+
+#### <mark style="color:purple;">For a simple Node.js application, the CI pipeline can be:</mark>
 
 ```yaml
-yamlCopy codestages:
+codestages:
   - install
   - test
 
@@ -78,82 +84,87 @@ run_tests:
     - npm test
 ```
 
-**Setting Up GitLab Runners:**
+## <mark style="color:red;">**Setting Up GitLab Runners**</mark>
 
-*   **Installation**:
+#### <mark style="color:purple;">**Installation**</mark><mark style="color:purple;">:</mark>
 
-    ```bash
-    bashCopy codecurl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
-    sudo apt-get install gitlab-runner
-    ```
-*   **Registration**:
+```bash
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
+sudo apt-get install gitlab-runner
+```
 
-    ```bash
-    bashCopy codesudo gitlab-runner register
-    ```
+#### <mark style="color:purple;">**Registration**</mark><mark style="color:purple;">:</mark>
 
-    Follow the prompts to register your runner with your GitLab instance.
-*   **Starting the Runner**:
+```bash
+sudo gitlab-runner register
+```
 
-    ```bash
-    bashCopy codesudo gitlab-runner start
-    ```
+Follow the prompts to register your runner with your GitLab instance.
 
-#### **5. Deploying to Cloud Services like AWS & Azure:**
+#### <mark style="color:purple;">**Starting the Runner**</mark><mark style="color:purple;">:</mark>
 
-**AWS:**
+```bash
+sudo gitlab-runner start
+```
+
+## <mark style="color:red;">**Deploying to Cloud Services like AWS & Azure**</mark>
+
+### <mark style="color:yellow;">**AWS**</mark>
 
 * Add AWS credentials as GitLab environment variables.
-* Add a deployment stage in `.gitlab-ci.yml`:
+
+#### <mark style="color:purple;">Add a deployment stage in</mark> <mark style="color:purple;"></mark><mark style="color:purple;">`.gitlab-ci.yml`</mark><mark style="color:purple;">:</mark>
 
 ```yaml
-yamlCopy codedeploy_aws:
+deploy_aws:
   stage: deploy
   script:
     - aws s3 cp ./dist s3://your-bucket-name/ --recursive
 ```
 
-**Azure:**
+### <mark style="color:yellow;">**Azure**</mark>
 
 * Add Azure credentials as GitLab environment variables.
-* Deploy using `.gitlab-ci.yml`:
+
+#### <mark style="color:purple;">Deploy using</mark> <mark style="color:purple;"></mark><mark style="color:purple;">`.gitlab-ci.yml`</mark><mark style="color:purple;">:</mark>
 
 ```yaml
-yamlCopy codedeploy_azure:
+deploy_azure:
   stage: deploy
   script:
     - az storage blob upload-batch -d <destination_container_name> -s <source_directory>
 ```
 
-#### **6. Collaborative Coding with GitLab:**
+## <mark style="color:red;">**Collaborative Coding with GitLab**</mark>
 
-**Merge Requests:**
+#### <mark style="color:purple;">**Merge Requests:**</mark>
 
 * Push changes to a new branch.
 * On GitLab, select "Merge Requests" > "New Merge Request".
 * Review, and when ready, merge.
 
-**Issues & Milestones:**
+#### <mark style="color:purple;">**Issues & Milestones:**</mark>
 
 * **Issues**: Used for feature requests, bugs, or tasks.
 * **Milestones**: Group issues or merge requests for sprints or versions.
 
-#### **7. GitLab Container Registry:**
+## <mark style="color:red;">**GitLab Container Registry**</mark>
 
-Manage Docker images within GitLab:
+### <mark style="color:yellow;">Manage Docker images within GitLab</mark>
 
-1.  **Login**:
+#### <mark style="color:purple;">**Login**</mark><mark style="color:purple;">:</mark>
 
-    ```bash
-    bashCopy codedocker login registry.gitlab.com
-    ```
-2.  **Build & Push**:
+```bash
+docker login registry.gitlab.com
+```
 
-    ```bash
-    bashCopy codedocker build -t registry.gitlab.com/<username>/<project_name> .
-    docker push registry.gitlab.com/<username>/<project_name>
-    ```
+#### <mark style="color:purple;">**Build & Push**</mark><mark style="color:purple;">:</mark>
 
-#### **8. Monitoring with GitLab:**
+```bash
+docker build -t registry.gitlab.com/<username>/<project_name> .
+docker push registry.gitlab.com/<username>/<project_name>
+```
+
+## <mark style="color:red;">**Monitoring with GitLab**</mark>
 
 GitLab provides Prometheus for monitoring. Navigate to the "Operations" > "Metrics" dashboard in your project to view metrics.
