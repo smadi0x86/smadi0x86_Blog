@@ -114,7 +114,7 @@ cd /path/to/your/folder
 git init
 ```
 
-#### <mark style="color:purple;">Connect to your GitLab repository:</mark>
+#### <mark style="color:purple;">Connect to your GitLab repository (SSH):</mark>
 
 ```bash
 git remote add origin git@gitlab.com:yourusername/yourrepository.git
