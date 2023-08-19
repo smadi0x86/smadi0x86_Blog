@@ -2,6 +2,8 @@
 description: >-
   Git is a distributed version control system that allows multiple developers to
   work on the same codebase without interfering with one another.
+cover: https://images3.alphacoders.com/109/1091500.jpg
+coverY: 0
 ---
 
 # Git

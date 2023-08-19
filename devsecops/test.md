@@ -1,5 +1,7 @@
 ---
 description: JWT with Python, Express, GitLab, and AWS
+cover: https://images3.alphacoders.com/109/1091500.jpg
+coverY: 0
 ---
 
 # Test

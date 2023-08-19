@@ -3,6 +3,8 @@ description: >-
   GitLab is a complete DevOps platform, delivered as a single application. This
   means you can manage your project from planning to deployment within one
   application.
+cover: https://images3.alphacoders.com/109/1091500.jpg
+coverY: 0
 ---
 
 # Gitlab

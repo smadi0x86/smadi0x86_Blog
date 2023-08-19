@@ -2,6 +2,8 @@
 description: >-
   Essential AWS CLI commands for setting up your AWS account and managing AWS
   resources.
+cover: https://images3.alphacoders.com/109/1091500.jpg
+coverY: 0
 ---
 
 # AWS CLI

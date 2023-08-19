@@ -2,6 +2,8 @@
 description: >-
   JSON Web Tokens (JWT) can be encoded into a URL-friendly string format, which
   can be signed for authentication and/or encrypted for protection.
+cover: https://images3.alphacoders.com/109/1091500.jpg
+coverY: 0
 ---
 
 # JSON Web Tokens
