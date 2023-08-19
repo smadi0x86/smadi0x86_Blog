@@ -133,7 +133,7 @@ git commit -m "Initial commit or a relevant message"
 git push -u origin main
 ```
 
-## <mark style="color:red;">Renaming the Default Branch</mark>
+## <mark style="color:red;">Renaming Branch</mark>
 
 #### <mark style="color:purple;">Rename your local branch:</mark>
 
