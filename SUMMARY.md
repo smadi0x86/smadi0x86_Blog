@@ -95,6 +95,7 @@
 * [Environment Variables in Development](devsecops/environment-variables-in-development.md)
 * [Gitlab](devsecops/gitlab.md)
 * [Git](devsecops/git.md)
+* [YAML](devsecops/yaml.md)
 * [Test](devsecops/test.md)
 
 ## 🪛 Hardware Hacking

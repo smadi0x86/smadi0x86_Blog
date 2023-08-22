@@ -83,3 +83,9 @@ DEBUG=True
 1. **Don't Commit Secrets**: Never commit secrets (API keys, database passwords, etc.) to version control. Instead, use environment variables.
 2. **Use `.env` files for Local Development Only**: `.env` files are great for local development but shouldn't be used in production settings. Instead, set environment variables directly on your production servers or through your orchestration tool.
 3. **Have Clear Documentation**: If you're working on a team, ensure everyone knows what environment variables are required for the application to run and what they're used for.
+
+
+
+{% hint style="info" %}
+Some environment variables can be set as key-value in softwares such as gitlab & when you push code it automatically identifies these variables
+{% endhint %}
