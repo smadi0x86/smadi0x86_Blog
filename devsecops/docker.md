@@ -130,3 +130,25 @@ build:
 {% hint style="info" %}
 Note that we added `volumes` to the CI job to allow it to communicate with the Docker daemon on the host.
 {% endhint %}
+
+## <mark style="color:red;">Mounting Volumes in Docker</mark>
+
+When working with Docker, sometimes it's necessary to persist data or share data between your local system and your Docker container. This is commonly done using Docker volumes.&#x20;
+
+### <mark style="color:yellow;">How to Mount a Volume</mark>
+
+To mount a volume (or bind mount a local directory) when starting a container, use the `-v` or `--volume` flag with the `docker run` command.
+
+#### <mark style="color:purple;">**Syntax**</mark><mark style="color:purple;">:</mark>
+
+```bash
+docker run -v /path/on/host:/path/in/container my_image_name
+```
+
+#### <mark style="color:purple;">**Example**</mark><mark style="color:purple;">:</mark>
+
+```bash
+docker run -v $(pwd):/app my_image_name
+```
+
+In the example above, the current directory (`$(pwd)`) on the host will be mounted to the `/app` directory in the container.
