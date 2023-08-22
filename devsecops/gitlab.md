@@ -91,9 +91,11 @@ run_tests:
 #### <mark style="color:purple;">**Installation**</mark><mark style="color:purple;">:</mark>
 
 ```bash
-curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh | sudo bash
-sudo apt-get install gitlab-runner
+curl -LJO "https://gitlab-runner-downloads.s3.amazonaws.com/latest/deb/gitlab-runner_${arch}.deb"
+dpkg -i gitlab-runner_<arch>.deb
 ```
+
+{% embed url="https://docs.gitlab.com/runner/install/linux-manually.html" %}
 
 #### <mark style="color:purple;">**Registration**</mark><mark style="color:purple;">:</mark>
 
@@ -107,6 +109,51 @@ Follow the prompts to register your runner with your GitLab instance.
 
 ```bash
 sudo gitlab-runner start
+```
+
+#### <mark style="color:purple;">**Viewing Live Logs:**</mark>
+
+```bash
+sudo gitlab-runner --debug run
+```
+
+This starts the runner in the foreground with live debugging information.
+
+#### <mark style="color:purple;">**Checking Runner Status:**</mark>
+
+```bash
+sudo gitlab-runner status
+```
+
+#### <mark style="color:purple;">**Stopping & Restarting:**</mark>
+
+```bash
+sudo gitlab-runner stop
+```
+
+```bash
+sudo gitlab-runner restart
+```
+
+#### <mark style="color:purple;">**Unregistering a Runner:**</mark>
+
+```bash
+sudo gitlab-runner unregister --name [RUNNER_NAME]
+```
+
+Replace `[RUNNER_NAME]` with the name or description you provided during the registration.
+
+#### <mark style="color:purple;">**Viewing All Registered Runners:**</mark>
+
+```bash
+sudo gitlab-runner list
+```
+
+#### <mark style="color:purple;">**Updating the GitLab Runner:**</mark>
+
+```bash
+sudo apt-get update
+sudo apt-get install gitlab-runner
 ```
 
 ## <mark style="color:red;">**Deploying to Cloud Services like AWS & Azure**</mark>
