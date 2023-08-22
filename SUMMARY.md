@@ -92,6 +92,7 @@
 * [AWS CLI](devsecops/aws-cli.md)
 * [JSON Web Tokens](devsecops/json-web-tokens.md)
 * [Docker](devsecops/docker.md)
+* [Environment Variables in Development](devsecops/environment-variables-in-development.md)
 * [Gitlab](devsecops/gitlab.md)
 * [Git](devsecops/git.md)
 * [Test](devsecops/test.md)
