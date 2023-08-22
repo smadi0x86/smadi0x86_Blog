@@ -91,6 +91,7 @@
 * [AZ-900](devsecops/az-900.md)
 * [AWS CLI](devsecops/aws-cli.md)
 * [JSON Web Tokens](devsecops/json-web-tokens.md)
+* [Docker](devsecops/docker.md)
 * [Gitlab](devsecops/gitlab.md)
 * [Git](devsecops/git.md)
 * [Test](devsecops/test.md)
