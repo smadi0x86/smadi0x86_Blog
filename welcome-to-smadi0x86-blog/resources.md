@@ -47,6 +47,8 @@ coverY: -122
 
 {% embed url="https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/" %}
 
+{% embed url="https://ademoverflow.com/blog/tutorial-fastapi-aws-lambda-serverless/" %}
+
 {% embed url="https://www.unite.ai/devsecops-everything-you-need-to-know/" %}
 
 {% embed url="https://reconshell.com/devsecops-roadmap/" %}
