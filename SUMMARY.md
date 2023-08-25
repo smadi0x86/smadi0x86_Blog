@@ -96,7 +96,7 @@
 * [Gitlab](devsecops/gitlab.md)
 * [Git](devsecops/git.md)
 * [YAML](devsecops/yaml.md)
-* [Test](devsecops/test.md)
+* [Serverless Framework](devsecops/serverless-framework.md)
 
 ## 🪛 Hardware Hacking
 
