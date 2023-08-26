@@ -124,6 +124,36 @@ git checkout branch_name
 git checkout commit_hash
 ```
 
+### <mark style="color:yellow;">Restoring Commited Branches</mark>
+
+If you've accidentally removed a branch in Git, don't worry! You can typically recover it with a few simple steps.
+
+Every action in git is logged.&#x20;
+
+#### <mark style="color:purple;">To find the last commit of the deleted branch:</mark>
+
+```bash
+git reflog
+```
+
+#### <mark style="color:purple;">For example, you might see an entry like:</mark>
+
+```less
+abcdef1 HEAD@{2}: checkout: moving from feature-branch to main
+```
+
+{% hint style="info" %}
+As an example `abcdef1` is the commit hash.
+{% endhint %}
+
+Now that you have the commit hash, you can restore the branch.&#x20;
+
+#### <mark style="color:purple;">Let's assume you want to recover a branch named</mark> <mark style="color:purple;"></mark><mark style="color:purple;">`feature-branch`</mark><mark style="color:purple;">:</mark>
+
+```bash
+git checkout -b feature-branch abcdef1
+```
+
 ## <mark style="color:red;">**Conflict Resolution & Reversion**</mark>
 
 ### <mark style="color:yellow;">**Handling Merge Conflicts**</mark>
