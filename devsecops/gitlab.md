@@ -214,6 +214,24 @@ docker build -t registry.gitlab.com/<username>/<project_name> .
 docker push registry.gitlab.com/<username>/<project_name>
 ```
 
-## <mark style="color:red;">**Monitoring with GitLab**</mark>
+## <mark style="color:red;">Test the Runner Locally</mark>
 
+#### <mark style="color:purple;">**In your project directory, run**</mark><mark style="color:purple;">:</mark>
+
+```bash
+gitlab-runner exec shell <job_name>
+```
+
+Here, replace `<job_name>` with the name of the job you defined in your `.gitlab-ci.yml` file.
+
+#### <mark style="color:purple;">For example, if you have a job named</mark> <mark style="color:purple;"></mark><mark style="color:purple;">`test`</mark><mark style="color:purple;">, you would run:</mark>
+
+```bash
+gitlab-runner exec shell test
+```
+
+This will execute the CI job locally and display the output, allowing you to debug any issues before pushing to the repository.
+
+{% hint style="info" %}
 GitLab provides Prometheus for monitoring. Navigate to the "Operations" > "Metrics" dashboard in your project to view metrics.
+{% endhint %}

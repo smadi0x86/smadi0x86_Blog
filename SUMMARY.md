@@ -90,13 +90,13 @@
 
 * [AZ-900](devsecops/az-900.md)
 * [AWS CLI](devsecops/aws-cli.md)
-* [JSON Web Tokens](devsecops/json-web-tokens.md)
+* [Git](devsecops/git.md)
+* [Gitlab](devsecops/gitlab.md)
+* [YAML](devsecops/yaml.md)
 * [Docker](devsecops/docker.md)
 * [Environment Variables in Development](devsecops/environment-variables-in-development.md)
-* [Gitlab](devsecops/gitlab.md)
-* [Git](devsecops/git.md)
-* [YAML](devsecops/yaml.md)
 * [Serverless Framework](devsecops/serverless-framework.md)
+* [JSON Web Tokens](devsecops/json-web-tokens.md)
 
 ## 🪛 Hardware Hacking
 
