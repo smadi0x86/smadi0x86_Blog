@@ -232,6 +232,65 @@ gitlab-runner exec shell test
 
 This will execute the CI job locally and display the output, allowing you to debug any issues before pushing to the repository.
 
+## <mark style="color:red;">Moving a Repository to a New GitLab Repository</mark>
+
+### <mark style="color:yellow;">Prepare Your Current Repository</mark>
+
+#### <mark style="color:purple;">**Navigate to your current project folder**</mark> <mark style="color:purple;"></mark><mark style="color:purple;">on your local machine:</mark>
+
+```bash
+cd path/to/your/current/repo
+```
+
+Ensure all changes are committed.
+
+#### &#x20;<mark style="color:purple;">If there are any outstanding changes, commit them:</mark>
+
+```bash
+git add .
+git commit -m "Committing final changes before migration."
+```
+
+{% hint style="info" %}
+Now you can create a new repository on gitlab.
+{% endhint %}
+
+### <mark style="color:yellow;">Push to the New Repository</mark>
+
+In your terminal, add the new repository as a remote.&#x20;
+
+#### <mark style="color:purple;">First, remove the old origin:</mark>
+
+```bash
+git remote remove origin
+```
+
+#### <mark style="color:purple;">**Add the new repository as the origin**</mark><mark style="color:purple;">:</mark>
+
+```bash
+git remote add origin <URL_to_your_new_GitLab_repository>
+```
+
+{% hint style="info" %}
+Replace `<URL_to_your_new_GitLab_repository>` with the URL of the repository you just created on GitLab.
+{% endhint %}
+
+#### <mark style="color:purple;">**Push everything to the new repository**</mark><mark style="color:purple;">:</mark>
+
+```bash
+git push -u origin --all
+git push -u origin --tags
+```
+
+Your project, complete with its full history, is now in the new GitLab repository.
+
+### <mark style="color:yellow;">Optional: Redirect from the Old Repository</mark>
+
+#### <mark style="color:purple;">If you want people to know that the project has moved:</mark>
+
+1. Delete everything in the old repository.
+2. Add a README that states the project has moved and provide the new URL.
+
 {% hint style="info" %}
 GitLab provides Prometheus for monitoring. Navigate to the "Operations" > "Metrics" dashboard in your project to view metrics.
 {% endhint %}
