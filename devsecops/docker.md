@@ -54,7 +54,8 @@ docker stop $(docker ps -aq) # Removes all containers
 Removes a Docker image.
 
 ```bash
-docker rmi image_name:tag
+docker rmi image_name:tag # Removes single image
+docker rmi $(docker images -q) # Removes all images
 ```
 
 ### <mark style="color:yellow;">**Docker logs**</mark>
