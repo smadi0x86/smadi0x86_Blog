@@ -44,8 +44,9 @@ docker ps
 Stops or removes a running container.
 
 ```bash
-docker stop container_name_or_id
-docker rm container_name_or_id
+docker stop container_name_or_id # Stops one container
+docker rm container_name_or_id # Remove one container
+docker stop $(docker ps -aq) # Removes all containers
 ```
 
 ### <mark style="color:yellow;">**Docker rmi**</mark>
