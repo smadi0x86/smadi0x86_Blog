@@ -88,7 +88,7 @@
 
 ## ♾ DevSecOps
 
-* [AZ-900](devsecops/az-900.md)
+* [AWS Certified Cloud Practitioner (CLF-C01)](devsecops/az-900.md)
 * [AWS CLI](devsecops/aws-cli.md)
 * [Git](devsecops/git.md)
 * [Gitlab](devsecops/gitlab.md)
