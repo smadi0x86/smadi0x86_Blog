@@ -1,2 +1,0 @@
-# Wifi Rubber Ducky
-
