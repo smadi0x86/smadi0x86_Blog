@@ -3,7 +3,6 @@
 * [💀 Welcome to smadi0x86 Blog](README.md)
   * [💡 New learner?](welcome-to-smadi0x86-blog/new-learner.md)
   * [🚬 Projects](welcome-to-smadi0x86-blog/projects.md)
-  * [📌 Pinned](welcome-to-smadi0x86-blog/pinned.md)
   * [❓ Questions](welcome-to-smadi0x86-blog/questions.md)
   * [📞 Contact](welcome-to-smadi0x86-blog/contact.md)
 
