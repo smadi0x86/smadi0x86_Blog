@@ -35,18 +35,6 @@
 * [x86 Assembly](low-level-learning/x86-assembler.md)
 * [GNU Debugger](low-level-learning/gnu-debugger.md)
 
-## ♾ DevSecOps
-
-* [AWS Certified Cloud Practitioner (CLF-C01)](devsecops/az-900.md)
-* [AWS CLI](devsecops/aws-cli.md)
-* [Git](devsecops/git.md)
-* [Gitlab](devsecops/gitlab.md)
-* [YAML](devsecops/yaml.md)
-* [Docker](devsecops/docker.md)
-* [Environment Variables in Development](devsecops/environment-variables-in-development.md)
-* [Serverless Framework](devsecops/serverless-framework.md)
-* [JSON Web Tokens](devsecops/json-web-tokens.md)
-
 ## 📚 Learn path
 
 * [🔴 Red Team](learn-path/red-team.md)
