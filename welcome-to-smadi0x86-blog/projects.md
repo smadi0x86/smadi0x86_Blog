@@ -15,11 +15,17 @@ A malware analysis & detection tool that utilizes several analysis techniques by
 
 Link: [https://github.com/smadi0x86/MalwareHolmes](https://github.com/smadi0x86/MalwareHolmes)
 
-## <mark style="color:red;">CSC-RedOps</mark>
+## <mark style="color:red;">CSC RedOps</mark>
 
 HTU Cyber Security Club, Offensive Operations Section learning pathway.
 
 Link: [https://github.com/smadi0x86/CSC-RedOps](https://github.com/smadi0x86/CSC-RedOps)
+
+## <mark style="color:red;">Fitpro App</mark>
+
+The primary purpose of this application as a project is to fulfill a university course's final project requirements and, most importantly, to learn Kubernetes (using minikube at the development level), followed by shifting to Amazon EKS deployment using Terraform.
+
+Link: [https://github.com/smadi0x86/Fitpro-App](https://github.com/smadi0x86/Fitpro-App)
 
 ## <mark style="color:red;">Java0x01</mark>
 
