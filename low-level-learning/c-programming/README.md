@@ -1,5 +1,4 @@
 ---
-description: C is better than rust, stop being a coward and handle your own memory!
 cover: https://cdn.pixabay.com/photo/2016/07/27/10/44/fireworks-1544999_1280.jpg
 coverY: 0
 layout:

@@ -44,7 +44,7 @@ volatile int *z;
 
 ## <mark style="color:red;">Storage classes</mark>
 
-<figure><img src="../../.gitbook/assets/image (33) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (36).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Storage classes are used to describe the features of a variable / function.&#x20;
 

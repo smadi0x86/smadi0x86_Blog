@@ -190,7 +190,7 @@ Defines the name counter to be equal to the C data type int.&#x20;
 |= → bitwise inclusive or and assign
 </code></pre>
 
-<figure><img src="../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:purple;">Example:</mark>
 

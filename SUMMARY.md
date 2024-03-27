@@ -1,10 +1,10 @@
 # Table of contents
 
 * [💀 Welcome to smadi0x86 Blog](README.md)
-  * [💡 New learner?](welcome-to-smadi0x86-blog/new-learner.md)
-  * [🚬 Projects](welcome-to-smadi0x86-blog/projects.md)
-  * [❓ Questions](welcome-to-smadi0x86-blog/questions.md)
-  * [📞 Contact](welcome-to-smadi0x86-blog/contact.md)
+  * [💡 New learner?](readme/new-learner.md)
+  * [🚬 Projects](readme/projects.md)
+  * [❓ Questions](readme/questions.md)
+  * [📞 Contact](readme/contact.md)
 
 ## 🤖 Low Level Learning
 

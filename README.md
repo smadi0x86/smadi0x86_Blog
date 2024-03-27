@@ -23,15 +23,13 @@ layout:
 
 # 💀 Welcome to smadi0x86 Blog
 
-> _<mark style="color:red;">"Our Offense is your Defense"</mark>_
-
 {% hint style="success" %}
 _You have reached smadi0x86 blog, have fun!_
 
 **Return to smadi0x86 portfolio by pressing** [**here**](https://smadi0x86.me)**.**
 {% endhint %}
 
-Where can you reach me? [contact.md](welcome-to-smadi0x86-blog/contact.md "mention")
+Where can you reach me? [contact.md](readme/contact.md "mention")
 
 #### <mark style="color:purple;">General Socials:</mark>
 

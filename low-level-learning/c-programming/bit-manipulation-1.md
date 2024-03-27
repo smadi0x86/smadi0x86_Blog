@@ -39,7 +39,7 @@ Bit manipulation is the act of algorithmically manipulating bits or other pieces
  2^7     2^6     2^5        2^4        2^3         2^2        2^1    2^0
 ```
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt="" width="478"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt="" width="478"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 1 byte = 8 bits. &#x20;

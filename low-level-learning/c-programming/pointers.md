@@ -31,7 +31,7 @@ C provides a remarkably useful type of variable called a pointer, a variable tha
 
 Its value is the address of another location in memory that can contain a value.
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Pointers allow functions to modify data passed to them as variables.&#x20;
 
@@ -484,7 +484,7 @@ As we are talked about de-referencing, there can be a reference for every variab
 
 A pointer which points to another pointer is called a double pointer and is works just like a normal pointer but it contains the address of a pointer instead of a variable.
 
-<figure><img src="../../.gitbook/assets/image (42).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ```c
  int **pointer;
@@ -492,9 +492,9 @@ A pointer which points to another pointer is called a double pointer and is work
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (56) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (60).png" alt="" width="563"><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (76).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (80).png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### <mark style="color:purple;">Example:</mark>
 
