@@ -34,6 +34,8 @@
   * [Error Recovery](low-level-learning/c-programming/error-recovery-2.md)
 * [x86 Assembly](low-level-learning/x86-assembler.md)
 * [GNU Debugger](low-level-learning/gnu-debugger.md)
+* [Data Structures & Algorithms](low-level-learning/data-structures-and-algorithms/README.md)
+  * [Singly Linked List](low-level-learning/data-structures-and-algorithms/singly-linked-list.md)
 
 ## 📚 Learn path
 
