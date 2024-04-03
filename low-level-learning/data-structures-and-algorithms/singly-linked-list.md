@@ -30,15 +30,15 @@ Linked lists can either be **singly** or **doubly** linked. We'll focus on singl
 If linked lists are multiple objects linked together, ideally we need a couple different objects.
 
 1. A LinkedList object, which holds all of the objects in the list.
-2. A Node object, which contains the `data` for the element, as well as a **pointer** to the next Node in the list.
+2. A Node object, which contains the `data` for the element, as well as a pointer to the next Node in the list.
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### **Wait, why not use arrays instead?**
 
-In lower level languages, arrays are allocated in **blocks.** Therefore, arrays are static in size and can only hold a specific data type.&#x20;
+In lower level languages, arrays are allocated in blocks**.** Therefore, arrays are static in size and can only hold a specific data type.&#x20;
 
-Linked lists store data in the **heap,** meaning that the data can be stored in an unorganized manner. Since each node points to the next one, it's still possible to maintain the list structure.
+Linked lists store data in the heap**,** meaning that the data can be stored in an unorganized manner. Since each node points to the next one, it's still possible to maintain the list structure.
 
 ### Getting Started <a href="#getting-started" id="getting-started"></a>
 
