@@ -34,8 +34,14 @@
   * [Error Recovery](low-level-learning/c-programming/error-recovery-2.md)
 * [x86 Assembly](low-level-learning/x86-assembler.md)
 * [GNU Debugger](low-level-learning/gnu-debugger.md)
-* [Data Structures & Algorithms](low-level-learning/data-structures-and-algorithms/README.md)
-  * [Singly Linked List](low-level-learning/data-structures-and-algorithms/singly-linked-list.md)
+
+## 🎓 Academic
+
+* [Database Design & Development](academic/database-design-and-development/README.md)
+  * [Data Modeling](academic/database-design-and-development/data-modeling.md)
+  * [Normalization](academic/database-design-and-development/normalization.md)
+* [Data Structures & Algorithms](academic/data-structures-and-algorithms/README.md)
+  * [Singly Linked List](academic/data-structures-and-algorithms/singly-linked-list.md)
 
 ## 📚 Learn path
 
