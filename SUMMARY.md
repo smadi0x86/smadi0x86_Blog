@@ -41,7 +41,15 @@
   * [Data Modeling](academic/database-design-and-development/data-modeling.md)
   * [Normalization](academic/database-design-and-development/normalization.md)
 * [Data Structures & Algorithms](academic/data-structures-and-algorithms/README.md)
-  * [Singly Linked List](academic/data-structures-and-algorithms/singly-linked-list.md)
+  * [Recursion](academic/data-structures-and-algorithms/recursion/README.md)
+    * [How Does Recursion Work?](academic/data-structures-and-algorithms/recursion/how-does-recursion-work.md)
+    * [Recursion Drawbacks](academic/data-structures-and-algorithms/recursion/recursion-drawbacks.md)
+  * [Linked Lists](academic/data-structures-and-algorithms/linked-lists/README.md)
+    * [Concepts](academic/data-structures-and-algorithms/linked-lists/concepts.md)
+    * [Implementation](academic/data-structures-and-algorithms/linked-lists/implementation.md)
+  * [Stack & Queues](academic/data-structures-and-algorithms/stack-and-queues/README.md)
+    * [Stack Implementation](academic/data-structures-and-algorithms/stack-and-queues/stack-implementation.md)
+    * [Queue Implementation](academic/data-structures-and-algorithms/stack-and-queues/queue-implementation.md)
 
 ## 📚 Learn path
 

@@ -120,4 +120,4 @@ For example, each supplier must have a name. In addition, the Phone property of 
 
 <figure><img src="https://docs.appfarm.io/~gitbook/image?url=https:%2F%2F29237295-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F-MiLU-xcHu0eLZiTxcmZ%252Fuploads%252FjJBYdekKXMMOwZIVRO9h%252Fnormalization-4-designer.png%3Falt=media%26token=6d7604ae-a956-40a3-8c4c-31320ccf306b&#x26;width=768&#x26;dpr=4&#x26;quality=100&#x26;sign=9c75830ba9d41e8ea398497f1ef5221306eb0b2508f32c4158280396fd2e78f1" alt="" width="563"><figcaption><p>Data model</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Data model designer</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Data model designer</p></figcaption></figure>
