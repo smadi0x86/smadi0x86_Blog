@@ -52,24 +52,24 @@
     * [Stack Implementation](academic/data-structures-and-algorithms/stack-and-queues/stack-implementation.md)
     * [Queue Implementation](academic/data-structures-and-algorithms/stack-and-queues/queue-implementation.md)
 
-***
+## 🪄 Certifications
 
-* [Certified Kubernetes Administrator (CKA)](certified-kubernetes-administrator-cka/README.md)
-  * [Core Concepts](certified-kubernetes-administrator-cka/core-concepts.md)
-  * [Scheduling](certified-kubernetes-administrator-cka/scheduling.md)
-  * [Logging & Monitoring](certified-kubernetes-administrator-cka/logging-and-monitoring.md)
-  * [Application Lifecycle Management](certified-kubernetes-administrator-cka/application-lifecycle-management.md)
-  * [Cluster Maintenance](certified-kubernetes-administrator-cka/cluster-maintenance.md)
-  * [Security](certified-kubernetes-administrator-cka/security.md)
-  * [Storage](certified-kubernetes-administrator-cka/storage.md)
-  * [Networking](certified-kubernetes-administrator-cka/networking.md)
-  * [Design Kubernetes Cluster](certified-kubernetes-administrator-cka/design-kubernetes-cluster.md)
-  * [Kubernetes The Kubeadm Way](certified-kubernetes-administrator-cka/kubernetes-the-kubeadm-way.md)
-  * [Troubleshooting](certified-kubernetes-administrator-cka/troubleshooting.md)
-  * [JSONPATH](certified-kubernetes-administrator-cka/jsonpath.md)
-  * [Lightning Lab](certified-kubernetes-administrator-cka/lightning-lab.md)
-  * [Mock Exams](certified-kubernetes-administrator-cka/mock-exams.md)
-  * [Killer Shell](certified-kubernetes-administrator-cka/killer-shell.md)
+* [Certified Kubernetes Administrator (CKA)](certifications/certified-kubernetes-administrator-cka/README.md)
+  * [Core Concepts](certifications/certified-kubernetes-administrator-cka/core-concepts.md)
+  * [Scheduling](certifications/certified-kubernetes-administrator-cka/scheduling.md)
+  * [Logging & Monitoring](certifications/certified-kubernetes-administrator-cka/logging-and-monitoring.md)
+  * [Application Lifecycle Management](certifications/certified-kubernetes-administrator-cka/application-lifecycle-management.md)
+  * [Cluster Maintenance](certifications/certified-kubernetes-administrator-cka/cluster-maintenance.md)
+  * [Security](certifications/certified-kubernetes-administrator-cka/security.md)
+  * [Storage](certifications/certified-kubernetes-administrator-cka/storage.md)
+  * [Networking](certifications/certified-kubernetes-administrator-cka/networking.md)
+  * [Design Kubernetes Cluster](certifications/certified-kubernetes-administrator-cka/design-kubernetes-cluster.md)
+  * [Kubernetes The Kubeadm Way](certifications/certified-kubernetes-administrator-cka/kubernetes-the-kubeadm-way.md)
+  * [Troubleshooting](certifications/certified-kubernetes-administrator-cka/troubleshooting.md)
+  * [JSONPATH](certifications/certified-kubernetes-administrator-cka/jsonpath.md)
+  * [Lightning Lab](certifications/certified-kubernetes-administrator-cka/lightning-lab.md)
+  * [Mock Exams](certifications/certified-kubernetes-administrator-cka/mock-exams.md)
+  * [Killer Shell](certifications/certified-kubernetes-administrator-cka/killer-shell.md)
 
 ## 📚 Learn path
 
