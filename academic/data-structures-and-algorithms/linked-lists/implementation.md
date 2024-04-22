@@ -34,7 +34,7 @@ Let us start by considering how this would work in a general linked list.&#x20;
 
 Step 1: Create new node, next node is the current front of list, there is no previous node which should be set to a nullptr
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Step 2: Make the previous node of the current front of list point to the new node
 
