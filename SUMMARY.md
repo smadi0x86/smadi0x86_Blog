@@ -56,3 +56,22 @@
 
 * [🔴 Red Team](learn-path/red-team.md)
 * [🔵 Blue Team](learn-path/blue-team.md)
+
+***
+
+* [Application Lifecycle Management](application-lifecycle-management.md)
+* [Cluster Maintenance](cluster-maintenance.md)
+* [JSONPATH](jsonpath.md)
+* [Killer Shell](killer-shell.md)
+* [Design Kubernetes Cluster](design-kubernetes-cluster.md)
+* [Kubernetes The Kubeadm Way](kubernetes-the-kubeadm-way.md)
+* [Lightning Lab](lightning-lab.md)
+* [Logging & Monitoring](logging-and-monitoring.md)
+* [Mock Exams](mock-exams.md)
+* [Certified Kubernetes Administrator (CKA)](certified-kubernetes-administrator-cka/README.md)
+  * [Core Concepts](certified-kubernetes-administrator-cka/core-concepts.md)
+* [Networking](networking.md)
+* [Scheduling](scheduling.md)
+* [Security](security.md)
+* [Troubleshooting](troubleshooting.md)
+* [Storage](storage.md)
