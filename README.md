@@ -26,7 +26,7 @@ layout:
 {% hint style="success" %}
 _You have reached smadi0x86 blog, have fun!_
 
-**Return to smadi0x86 portfolio by pressing** [**here**](https://smadi0x86.me)**.**
+**This is 1% of learning content I document, the rest of the content are temporarily private!**
 {% endhint %}
 
 Where can you reach me? [contact.md](readme/contact.md "mention")

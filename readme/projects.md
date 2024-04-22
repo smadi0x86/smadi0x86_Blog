@@ -27,12 +27,6 @@ The primary purpose of this application as a project is to fulfill a university 
 
 Link: [https://github.com/smadi0x86/Fitpro-App](https://github.com/smadi0x86/Fitpro-App)
 
-## <mark style="color:red;">Java0x01</mark>
-
-Teach2Learn Java OOP Essentials. Teach to Learn is useful to trick your brain and make it believe that you understand a certain topic by teaching it, which makes learning crazy fast.
-
-Link: [https://github.com/smadi0x86/Java0x01](https://github.com/smadi0x86/Java0x01)
-
 {% hint style="info" %}
-More to come soon...
+There are more projects that are confidential for our startup [AuspicesAI](https://auspicesai.com), stay tuned for other projects soon...
 {% endhint %}

@@ -3,6 +3,7 @@
 * [💀 Welcome to smadi0x86 Blog](README.md)
   * [💡 New learner?](readme/new-learner.md)
   * [🚬 Projects](readme/projects.md)
+  * [🎓 Certifications](readme/projects-1.md)
   * [❓ Questions](readme/questions.md)
   * [📞 Contact](readme/contact.md)
 
