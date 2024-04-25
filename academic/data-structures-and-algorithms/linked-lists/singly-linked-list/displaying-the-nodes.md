@@ -19,8 +19,6 @@ layout:
 
 # Displaying The Nodes
 
-#### Iterative Method: <a href="#iterative-method" id="iterative-method"></a>
-
 ```c
 void display(struct node *ptr) {
     // Checking if list is empty
@@ -37,42 +35,8 @@ void display(struct node *ptr) {
 }
 ```
 
-#### Recursive Method: <a href="#recursive-method" id="recursive-method"></a>
+### Time & Space Complexity <a href="#time-and-space-complexity" id="time-and-space-complexity"></a>
 
-```c
-void display(struct node *ptr) {
-
-    if (ptr != NULL) {
-        printf("%d\t", ptr->data);
-        display(ptr->next);
-    }
-}
-```
-
-#### Recursive & Reversed: <a href="#recursive-and-reversed" id="recursive-and-reversed"></a>
-
-```c
-void display(struct node *ptr) {
-
-    if (ptr != NULL) {
-        display(ptr -> next);
-        printf("%d\t", ptr->data);
-    }
-}
-```
-
-#### Time and Space Complexity: <a href="#time-and-space-complexity" id="time-and-space-complexity"></a>
-
-{% tabs %}
-{% tab title="Iterative" %}
-Time Complexity: **O(N)**&#x20;
+Time Complexity: **O(n)**&#x20;
 
 **No extra space**
-{% endtab %}
-
-{% tab title="Recursive" %}
-Time complexity : **O(N)**&#x20;
-
-**Internal stack of size n+1 is used.**
-{% endtab %}
-{% endtabs %}
