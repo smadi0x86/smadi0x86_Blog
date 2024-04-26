@@ -34,6 +34,13 @@
       * [Double](low-level-learning/c-programming/abstract-data-types/abstract-data-types-2/abstract-data-types-1.md)
   * [Error Recovery](low-level-learning/c-programming/error-recovery-2.md)
 * [x86 Assembly](low-level-learning/x86-assembler.md)
+* [C/C++ Build Systems](low-level-learning/x86-assembler-1/README.md)
+  * [Fundamentals for Linking](low-level-learning/x86-assembler-1/x86-assembler.md)
+  * [CMake for Building and Linking](low-level-learning/x86-assembler-1/x86-assembler-1.md)
+  * [Shared Libraries (Dynamic Linking)](low-level-learning/x86-assembler-1/x86-assembler-2.md)
+  * [Cross-Platform Compilation](low-level-learning/x86-assembler-1/x86-assembler-3.md)
+  * [Dynamic Linking and Dependency Management](low-level-learning/x86-assembler-1/x86-assembler-4.md)
+  * [Symbolic Linking](low-level-learning/x86-assembler-1/x86-assembler-5.md)
 * [GNU Debugger](low-level-learning/gnu-debugger.md)
 
 ## 🎓 Academic
