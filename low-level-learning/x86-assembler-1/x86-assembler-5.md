@@ -19,60 +19,61 @@ layout:
 
 # Symbolic Linking
 
-**Symbolic Links: A Shortcut in the File System**
+## **Symbolic Links**
 
-* Imagine a symbolic link as a special file that acts like a shortcut to another file or directory on your system. It doesn't contain the actual data itself, but rather stores the path to the target file or directory.
+Imagine a symbolic link as a special file that acts like a shortcut to another file or directory on your system. It doesn't contain the actual data itself, but rather stores the path to the target file or directory.
 
-**2. Creating Symbolic Links:**
+## **Creating Symbolic Links**
 
-* **Terminal Commands:** On Unix-based systems, use the `ln` command to create symbolic links. The basic syntax is:
+On Unix-based systems, use the `ln` command to create symbolic links.&#x20;
 
-Bash
+#### The basic syntax is:
 
-```
+```bash
 ln -s target_file link_name
 ```
-
-Use code with caution.content\_copy
 
 * `target_file`: The path to the original file or directory you want to link to.
 * `link_name`: The name you give to the symbolic link.
 
-**Example:**
+#### **Example:**
 
-Bash
-
-```
+```bash
 ln -s /path/to/original_file my_shortcut
 ```
 
-Use code with caution.content\_copy
-
 * This creates a symbolic link named `my_shortcut` that points to the file `/path/to/original_file`.
 
-**3. Types of Symbolic Links:**
+## **Types of Symbolic Links**
 
-* **File Symbolic Links:** These link to individual files.
-* **Directory Symbolic Links:** These link to entire directories, creating a sort of alias for the directory structure.
+**File Symbolic Links:** These link to individual files.
 
-**4. Following Symbolic Links:**
+**Directory Symbolic Links:** These link to entire directories, creating a sort of alias for the directory structure.
 
-* When you try to access a symbolic link, the operating system follows the link and accesses the target file or directory. This happens transparently for most operations.
+## **Following Symbolic Links**
 
-**5. Key Points to Remember:**
+When you try to access a symbolic link, the operating system follows the link and accesses the target file or directory. This happens transparently for most operations.
 
-* **Relative vs. Absolute Paths:** You can use both relative and absolute paths for the target file in a symbolic link.
-* **Broken Links:** If the target file or directory is moved or deleted, the symbolic link becomes broken, and attempting to access it will result in an error.
-* **Permissions:** Symbolic links inherit some permissions from the original file or directory, but they might also have their own permissions set.
+## **Key Points to Remember**
 
-**6. Use Cases for Symbolic Links:**
+**Relative vs. Absolute Paths:** You can use both relative and absolute paths for the target file in a symbolic link.
 
-* **Organizing Projects:** Organize your development projects by creating symbolic links to frequently used libraries or header files in a central location.
-* **Data Backups:** Create symbolic links to backup directories on separate drives for easy access and organization.
-* **Virtual File Systems:** Symbolic links play a role in some virtual file systems, allowing for dynamic organization of data.
+**Broken Links:** If the target file or directory is moved or deleted, the symbolic link becomes broken, and attempting to access it will result in an error.
 
-**7. Limitations of Symbolic Links:**
+**Permissions:** Symbolic links inherit some permissions from the original file or directory, but they might also have their own permissions set.
 
-* **Broken Links:** As mentioned earlier, broken links can cause issues if the target is no longer available.
-* **Performance:** Following symbolic links might introduce a slight overhead compared to directly accessing files.
-* **Cross-FileSystem Links:** Symbolic links generally don't work across different file systems (e.g., linking from NTFS to ext4).
+## **Use Cases for Symbolic Links**
+
+**Organizing Projects:** Organize your development projects by creating symbolic links to frequently used libraries or header files in a central location.
+
+**Data Backups:** Create symbolic links to backup directories on separate drives for easy access and organization.
+
+**Virtual File Systems:** Symbolic links play a role in some virtual file systems, allowing for dynamic organization of data.
+
+## **Limitations of Symbolic Links**
+
+**Broken Links:** As mentioned earlier, broken links can cause issues if the target is no longer available.
+
+**Performance:** Following symbolic links might introduce a slight overhead compared to directly accessing files.
+
+**Cross-FileSystem Links:** Symbolic links generally don't work across different file systems (e.g., linking from NTFS to ext4).
