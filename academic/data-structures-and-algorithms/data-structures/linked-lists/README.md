@@ -17,5 +17,5 @@ layout:
     visible: true
 ---
 
-# Binary Tree
+# Linked Lists
 

@@ -17,5 +17,5 @@ layout:
     visible: true
 ---
 
-# Doubly Linked List
+# Data Structures
 
